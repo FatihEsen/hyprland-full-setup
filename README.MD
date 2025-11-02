@@ -69,7 +69,7 @@ Print	Ekran görüntüsü (panoya)
 Shift + Print	Bölge seç → panoya
 Ekran Görüntüsü
 
-![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/wofi1.png)  
+![Hyprland Wofi Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/wofi1.png)  
 
 bash
 
