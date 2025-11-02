@@ -70,6 +70,7 @@ Shift + Print	Bölge seç → panoya
 Ekran Görüntüsü
 
 ![Hyprland Wofi Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/wofi1.png)  
+![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/wofi1.png)  
 
 bash
 
