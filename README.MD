@@ -26,7 +26,7 @@
 
 ```bash
 # 1. Scripti indir
-curl -LO https://raw.githubusercontent.com/fatihesen/hyprland-full-setup/main/hyprland-full-setup.sh
+curl -LO https://raw.githubusercontent.com/FatihEsen/hyprland-full-setup/refs/heads/main/hyprland-full-setup.sh
 
 # 2. Çalıştır
 chmod +x hyprland-full-setup.sh
