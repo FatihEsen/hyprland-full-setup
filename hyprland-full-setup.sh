@@ -1,4 +1,4 @@
-an -Syu --noconfirm \
+sudo pacman -Syu --noconfirm --needed \
     hyprland waybar kitty wofi neovim \
     pipewire pipewire-pulse wireplumber \
     dunst hyprpaper wl-clipboard cliphist \
@@ -8,9 +8,7 @@ an -Syu --noconfirm \
     wofi papirus-icon-theme
 
 # --- 2. DİZİNLER ---
-mkdir -p ~/.config/{hy
-
-pr,waybar,kitty,wofi,nvim,hyprpaper}
+mkdir -p ~/.config/{hypr,waybar,kitty,wofi,nvim,hyprpaper}
 
 # --- 3. HYPR LAND CONF ---
 cat > ~/.config/hypr/hyprland.conf << 'EOF'
