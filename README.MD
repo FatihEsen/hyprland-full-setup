@@ -3,8 +3,7 @@
 > **Kompak, koyu, Terminus fontlu, tekerlekli, ikonlu, %100 çalışır Hyprland kurulumu**  
 > **Tek bir `.sh` scriptiyle sıfırdan kur!**
 
-![Hyprland Screenshot](https://via.placeholder.com/1200x600.png?text=Hyprland+Full+Setup+Screenshot)  
-*(İstersen kendi ekran görüntünü ekle)*
+![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/hyprland-full.png)  
 
 ---
 
@@ -70,7 +69,7 @@ Print	Ekran görüntüsü (panoya)
 Shift + Print	Bölge seç → panoya
 Ekran Görüntüsü
 
-    (Buraya kendi ekran görüntünü ekle)
+![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/wofi1.png)  
 
 bash
 
@@ -96,43 +95,3 @@ Teşekkür
 
     "Hyprland kurmak 5 dakika, keyfini çıkarmak ömür boyu."
     – fatihesen
-
-text
-
----
-
-## GitHub Repo Oluşturma (Adım Adım)
-
-1. **GitHub’a gir:** [https://github.com/new](https://github.com/new)
-2. **Repo adı:** `hyprland-full-setup`
-3. **Açıklama:** `Tek scriptle tam Hyprland kurulumu`
-4. **Public** seç
-5. **"Add a README file" → İŞARETLEME**
-6. **"Add .gitignore" → None**
-7. **"Choose a license" → MIT License**
-8. **Create repository**
-
----
-
-## Dosyaları Yükle
-
-| Dosya | İçerik |
-|------|-------|
-| `hyprland-full-setup.sh` | Daha önce verdiğim script |
-| `README.md` | Yukarıdaki **tamamı** |
-
-→ GitHub’da `Add file → Upload files` → ikisini sürükle-bırak
-
----
-
-## Sonuç Link
-
-> **https://github.com/fatihesen/hyprland-full-setup**
-
----
-
-## Bonus: İndirme Butonu (README’ye ekle)
-
-[İndir: hyprland-full-setup.sh](https://raw.githubusercontent.com/fatihesen/hyprland-full-setup/main/hyprland-full-setup.sh)
-
-
