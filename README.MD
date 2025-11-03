@@ -49,7 +49,6 @@ Hyprland Setup - Fevkaladenin Fevkinde! 🚀
 - Hyprland (Wayland compositor)
 
 ### Otomatik Kurulum
-```bash
 # Scripti indir ve çalıştır
 '''curl -LO https://raw.githubusercontent.com/FatihEsen/hyprland-full-setup/refs/heads/main/hyprland-full-setup.sh
 chmod +x hyprland-full-setup.sh
