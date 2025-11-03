@@ -93,57 +93,72 @@ cp -r wofi/ ~/.config/
 # Waybar script'ini çalıştırılabilir yap
 chmod +x ~/.config/waybar/scripts/volume.sh
 
-⌨️ Tuş Atamaları
-Temel Tuş Kombinasyonları
-Tuş	Aksiyon	Açıklama
-SUPER + Enter	Kitty terminal	Terminal aç
-SUPER + Q	Pencere kapat	Aktif pencereyi kapat
-SUPER + E	Thunar	Dosya yöneticisi
-SUPER + B	Firefox	Web tarayıcı
-SUPER + R	Wofi	Uygulama başlatıcı
-SUPER + N	Neovim	Metin editörü
-Pencere Yönetimi
-Tuş	Aksiyon	Açıklama
-SUPER + V	Pencere yüzdürme	Pencereyi yüzdür/durdur
-SUPER + F	Tam ekran	Pencere tam ekran
-SUPER + Shift + F	Gerçek tam ekran	Gerçek tam ekran modu
-SUPER + P	Pseduo	Pseduo tam ekran
-Workspace Yönetimi
-Tuş	Aksiyon	Açıklama
-SUPER + 1-0	Workspace geçiş	1-10 workspace'ler
-SUPER + Shift + 1-0	Pencere taşı	Pencereyi workspace'e taşı
-Fare Tekerleği (Waybar)	Workspace geçiş	Waybar üzerinde scroll
-Pencere Odak & Taşıma
-Tuş	Aksiyon	Açıklama
-SUPER + ←→↑↓	Odak değiştir	Pencere odaklama
-SUPER + Shift + ←→↑↓	Pencere taşı	Pencereyi taşı
-SUPER + Mouse	Sürükle & Boyutlandır	Fare ile pencere kontrolü
-Medya & Sistem Kontrolleri
-Tuş	Aksiyon	Açıklama
-Volume Up/Down	Ses ayarı	Ses seviyesi %5
-Volume Mute	Sessiz	Sesi aç/kapat
-Brightness Up/Down	Parlaklık	Ekran parlaklığı %5
-Print Screen	Ekran görüntüsü	Tam ekran görüntü
-Shift + Print	Bölge ekran görüntüsü	Seçilen bölge görüntüsü
-Fare Kontrolleri
-Element	Aksiyon	Açıklama
-Battery Modülü	Tekerlek	Parlaklık kontrolü
-Ses Modülü	Tekerlek	Ses seviyesi kontrolü
-Workspace'ler	Tekerlek	Workspace geçişi
-🗂️ Workspace Yapısı
-Workspace	Emoji	Amaç
-1	🖥️	Masaüstü & Ana çalışma
-2	📁	Dosya yönetimi & Dosyalar
-3	🌐	Web tarama & İnternet
-4	📝	Notlar & Dokümantasyon
-5	🎵	Müzik & Ses uygulamaları
-6	🎮	Oyun & Eğlence
-7	📷	Medya & Görüntü işleme
-8	🔧	Araçlar & Sistem
-9	📚	Belgeler & Kitaplar
-10	⭐	Önemli & Sık kullanılan
+# ⌨️ Tuş Atamaları
 
-Aktif Workspace: 🚀 roket emojisi ile vurgulanır
+## Temel Tuş Kombinasyonları
+| Tuş | Aksiyon | Açıklama |
+|-----|---------|----------|
+| `SUPER + Enter` | Kitty terminal | Terminal aç |
+| `SUPER + Q` | Pencere kapat | Aktif pencereyi kapat |
+| `SUPER + E` | Thunar | Dosya yöneticisi |
+| `SUPER + B` | Firefox | Web tarayıcı |
+| `SUPER + R` | Wofi | Uygulama başlatıcı |
+| `SUPER + N` | Neovim | Metin editörü |
+
+## Pencere Yönetimi
+| Tuş | Aksiyon | Açıklama |
+|-----|---------|----------|
+| `SUPER + V` | Pencere yüzdürme | Pencereyi yüzdür/durdur |
+| `SUPER + F` | Tam ekran | Pencere tam ekran |
+| `SUPER + Shift + F` | Gerçek tam ekran | Gerçek tam ekran modu |
+| `SUPER + P` | Pseduo | Pseduo tam ekran |
+
+## Workspace Yönetimi
+| Tuş | Aksiyon | Açıklama |
+|-----|---------|----------|
+| `SUPER + 1-0` | Workspace geçiş | 1-10 workspace'ler |
+| `SUPER + Shift + 1-0` | Pencere taşı | Pencereyi workspace'e taşı |
+| `Fare Tekerleği (Waybar)` | Workspace geçiş | Waybar üzerinde scroll |
+
+## Pencere Odak & Taşıma
+| Tuş | Aksiyon | Açıklama |
+|-----|---------|----------|
+| `SUPER + ←→↑↓` | Odak değiştir | Pencere odaklama |
+| `SUPER + Shift + ←→↑↓` | Pencere taşı | Pencereyi taşı |
+| `SUPER + Mouse` | Sürükle & Boyutlandır | Fare ile pencere kontrolü |
+
+## Medya & Sistem Kontrolleri
+| Tuş | Aksiyon | Açıklama |
+|-----|---------|----------|
+| `Volume Up/Down` | Ses ayarı | Ses seviyesi %5 |
+| `Volume Mute` | Sessiz | Sesi aç/kapat |
+| `Brightness Up/Down` | Parlaklık | Ekran parlaklığı %5 |
+| `Print Screen` | Ekran görüntüsü | Tam ekran görüntü |
+| `Shift + Print` | Bölge ekran görüntüsü | Seçilen bölge görüntüsü |
+
+## Fare Kontrolleri
+| Element | Aksiyon | Açıklama |
+|---------|---------|----------|
+| `Battery Modülü` | Tekerlek | Parlaklık kontrolü |
+| `Ses Modülü` | Tekerlek | Ses seviyesi kontrolü |
+| `Workspace'ler` | Tekerlek | Workspace geçişi |
+
+# 🗂️ Workspace Yapısı
+
+| Workspace | Emoji | Amaç |
+|-----------|-------|------|
+| **1** | 🖥️ | Masaüstü & Ana çalışma |
+| **2** | 📁 | Dosya yönetimi & Dosyalar |
+| **3** | 🌐 | Web tarama & İnternet |
+| **4** | 📝 | Notlar & Dokümantasyon |
+| **5** | 🎵 | Müzik & Ses uygulamaları |
+| **6** | 🎮 | Oyun & Eğlence |
+| **7** | 📷 | Medya & Görüntü işleme |
+| **8** | 🔧 | Araçlar & Sistem |
+| **9** | 📚 | Belgeler & Kitaplar |
+| **10** | ⭐ | Önemli & Sık kullanılan |
+
+**Aktif Workspace**: 🚀 roket emojisi ile vurgulanır
 🖼️ Ekran Görüntüleri
 text
 
