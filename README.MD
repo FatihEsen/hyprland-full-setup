@@ -1,89 +1,241 @@
-# Hyprland Full Setup – 2025
-
-> **Kompak, koyu, Terminus fontlu, tekerlekli, ikonlu, %100 çalışır Hyprland kurulumu**  
-> **Tek bir `.sh` scriptiyle sıfırdan kur!**
 
 ![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/hyprland-full.png)  
 
----
 
-## Özellikler
+Hyprland Setup - Fevkaladenin Fevkinde! 🚀
 
-| Uygulama | Özellik |
-|--------|--------|
-| **Hyprland** | Koyu tema, blur, animasyon, 1-10 workspace |
-| **Waybar** | Kompak, Terminus font, tekerlek ile workspace, boş workspace gizli |
-| **Kitty** | Terminus 18, koyu tema (Catppuccin Mocha) |
-| **Wofi** | Dracula tema, blur, ikonlu, Terminus font |
-| **Neovim** | `vim` → `nvim` alias, koyu tema |
-| **Ses** | Tekerlek + ikon + %, sessize al |
-| **Medya Tuşları** | Ses, parlaklık, ekran görüntüsü |
-| **Otomatik Koyu Tema** | GTK/Qt, Firefox, sistem genelinde |
+![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/hyprland-full.png)  
 
----
+📋 İçindekiler
 
-## Kurulum (1 Komut)
+    Özellikler
 
-```bash
-# 1. Scripti indir
+    Hızlı Kurulum
+
+    Tuş Atamaları
+
+    Workspace Yapısı
+
+    Ekran Görüntüleri
+
+    Sık Kullanılan Komutlar
+
+✨ Özellikler
+🎨 Görsel & Tema
+
+    Catppuccin Macchiato renk teması
+
+    Terminus font ailesi
+
+    Emoji & İkon desteği (FontAwesome, JoyPixels, Noto Emoji)
+
+    Blur efektleri ve yuvarlak köşeler
+
+    Animasyonlu workspace geçişleri
+
+🛠️ Fonksiyonellik
+
+    Fare tekerleği ile parlaklık kontrolü (Battery modülü üzerinde)
+
+    Fare tekerleği ile ses kontrolü
+
+    Workspace scroll ile hızlı geçiş
+
+    Emoji ile workspace'ler - görsel ve okunaklı
+
+    Parlaklık kontrolü - hem tuş hem fare
+
+    Ekran görüntüsü - tam ekran ve bölge seçimi
+
+📦 Entegre Uygulamalar
+
+    Waybar - özelleştirilmiş status bar
+
+    Kitty - terminal emülatörü
+
+    Wofi - uygulama başlatıcı
+
+    Thunar - dosya yöneticisi
+
+    Firefox - web tarayıcı
+
+    Neovim - metin editörü
+
+🚀 Hızlı Kurulum
+Ön Koşullar
+
+    Arch Linux veya EndeavourOS
+
+    Hyprland (Wayland compositor)
+
+Otomatik Kurulum
+bash
+
+# Scripti indir ve çalıştır
 curl -LO https://raw.githubusercontent.com/FatihEsen/hyprland-full-setup/refs/heads/main/hyprland-full-setup.sh
+chmod +x hyprland-setup.sh
+./hyprland-setup.sh
 
-# 2. Çalıştır
-chmod +x hyprland-full-setup.sh
-./hyprland-full-setup.sh
+Manuel Kurulum
+bash
 
-    Not: sudo şifreni soracak (paket kurulumları için).
-    Kurulum bittikten sonra oturumu kapat/aç veya hyprctl reload.
+# Gerekli paketleri yükle
+sudo pacman -S --needed hyprland waybar dunst kitty thunar firefox wofi neovim \
+    brightnessctl grim slurp wl-clipboard cliphist pavucontrol \
+    ttf-terminus-nerd ttf-font-awesome ttf-joypixels noto-fonts-emoji
 
-Gereksinimler
+# Config dosyalarını kopyala
+cp -r hypr/ ~/.config/
+cp -r waybar/ ~/.config/
+cp -r kitty/ ~/.config/
+cp -r wofi/ ~/.config/
 
-    Arch Linux (veya Arch tabanlı dağıtım)
-    İnternet bağlantısı
-    pacman (varsayılan)
+# Waybar script'ini çalıştırılabilir yap
+chmod +x ~/.config/waybar/scripts/volume.sh
 
-Ne Yapar?
+⌨️ Tuş Atamaları
+Temel Tuş Kombinasyonları
+Tuş	Aksiyon	Açıklama
+SUPER + Enter	Kitty terminal	Terminal aç
+SUPER + Q	Pencere kapat	Aktif pencereyi kapat
+SUPER + E	Thunar	Dosya yöneticisi
+SUPER + B	Firefox	Web tarayıcı
+SUPER + R	Wofi	Uygulama başlatıcı
+SUPER + N	Neovim	Metin editörü
+Pencere Yönetimi
+Tuş	Aksiyon	Açıklama
+SUPER + V	Pencere yüzdürme	Pencereyi yüzdür/durdur
+SUPER + F	Tam ekran	Pencere tam ekran
+SUPER + Shift + F	Gerçek tam ekran	Gerçek tam ekran modu
+SUPER + P	Pseduo	Pseduo tam ekran
+Workspace Yönetimi
+Tuş	Aksiyon	Açıklama
+SUPER + 1-0	Workspace geçiş	1-10 workspace'ler
+SUPER + Shift + 1-0	Pencere taşı	Pencereyi workspace'e taşı
+Fare Tekerleği (Waybar)	Workspace geçiş	Waybar üzerinde scroll
+Pencere Odak & Taşıma
+Tuş	Aksiyon	Açıklama
+SUPER + ←→↑↓	Odak değiştir	Pencere odaklama
+SUPER + Shift + ←→↑↓	Pencere taşı	Pencereyi taşı
+SUPER + Mouse	Sürükle & Boyutlandır	Fare ile pencere kontrolü
+Medya & Sistem Kontrolleri
+Tuş	Aksiyon	Açıklama
+Volume Up/Down	Ses ayarı	Ses seviyesi %5
+Volume Mute	Sessiz	Sesi aç/kapat
+Brightness Up/Down	Parlaklık	Ekran parlaklığı %5
+Print Screen	Ekran görüntüsü	Tam ekran görüntü
+Shift + Print	Bölge ekran görüntüsü	Seçilen bölge görüntüsü
+Fare Kontrolleri
+Element	Aksiyon	Açıklama
+Battery Modülü	Tekerlek	Parlaklık kontrolü
+Ses Modülü	Tekerlek	Ses seviyesi kontrolü
+Workspace'ler	Tekerlek	Workspace geçişi
+🗂️ Workspace Yapısı
+Workspace	Emoji	Amaç
+1	🖥️	Masaüstü & Ana çalışma
+2	📁	Dosya yönetimi & Dosyalar
+3	🌐	Web tarama & İnternet
+4	📝	Notlar & Dokümantasyon
+5	🎵	Müzik & Ses uygulamaları
+6	🎮	Oyun & Eğlence
+7	📷	Medya & Görüntü işleme
+8	🔧	Araçlar & Sistem
+9	📚	Belgeler & Kitaplar
+10	⭐	Önemli & Sık kullanılan
 
-    Gerekli paketleri kurar (hyprland, waybar, kitty, wofi, neovim, pipewire, vs.)
-    Tüm konfigürasyon dosyalarını yazar:
-        ~/.config/hypr/hyprland.conf
-        ~/.config/waybar/config.jsonc + style.css
-        ~/.config/kitty/kitty.conf
-        ~/.config/wofi/config + style.css
-        ~/.config/waybar/scripts/volume.sh
-    vim → nvim alias ekler
-    Waybar ve Hyprland’i yeniden başlatır
+Aktif Workspace: 🚀 roket emojisi ile vurgulanır
+🖼️ Ekran Görüntüleri
+text
 
-Kısayollar
-Tuş	İşlem
-SUPER + Return	Kitty (zsh)
-SUPER + R	Wofi (uygulama başlatıcı)
-SUPER + Q	Aktif pencereyi kapat
-SUPER + E	Thunar
-SUPER + B	Firefox
-SUPER + N	Neovim
-SUPER + 1-0	Workspace 1-10
-SUPER + Shift + 1-0	Pencereyi taşı
-SUPER + Fare Tekerleği	Workspace değiştir
-Fare Tekerleği (ses bloğu)	Ses artır/azalt
-Print	Ekran görüntüsü (panoya)
-Shift + Print	Bölge seç → panoya
+[Waybar] - Catppuccin temalı, emoji workspace'li
+[Workspace'ler] - Renkli gradient vurgulu
+[Terminal] - Kitty ile Catppuccin teması
+[Uygulama Başlatıcı] - Wofi ile koyu tema
 
-#Katkı Yap
+🔧 Sık Kullanılan Komutlar
+Hyprland Kontrolleri
+bash
 
-    Forkla
-    Değişiklik yap
-    Pull Request gönder
+# Config reload
+hyprctl reload
 
-Lisans
+# Mevcut workspace
+hyprctl activeworkspace
 
-MIT License – İstediğin gibi kullan, paylaş, değiştir.
-Teşekkür
+# Tüm workspace'ler
+hyprctl workspaces
 
-    Hyprland
-    Waybar
-    Wofi
-    Catppuccin
-    @fatihesen – Bu repo’nun yaratıcısı
+# Pencere listesi
+hyprctl clients
 
-    "Hyprland kurmak 5 dakika, keyfini çıkarmak ömür boyu."
-    – fatihesen
+Sistem Kontrolleri
+bash
+
+# Ses kontrolü
+wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+# Parlaklık kontrolü
+brightnessctl set 5%+
+
+# Ekran görüntüsü
+grim - | wl-copy
+grim -g "$(slurp)" - | wl-copy
+
+Waybar Kontrolleri
+bash
+
+# Waybar'ı yeniden başlat
+pkill waybar && waybar
+
+# Waybar log'larını görüntüle
+waybar -l debug
+
+🐛 Sorun Giderme
+Font Problemleri
+bash
+
+# Font'ları kontrol et
+fc-list | grep -i "terminus\|fontawesome\|joypixels"
+
+# Font cache'i yenile
+fc-cache -fv
+
+Waybar Çalışmıyorsa
+bash
+
+# Config syntax kontrolü
+waybar -c ~/.config/waybar/config.jsonc
+
+# Log'ları incele
+journalctl -u waybar -f
+
+Hyprland Problemleri
+bash
+
+# Hyprland log'ları
+journalctl -u hyprland -f
+
+# Config test
+hyprctl keyword monitor ",preferred,auto,1"
+
+🤝 Katkıda Bulunma
+
+Bu setup'ı geliştirmek için:
+
+    Fork yapın
+
+    Feature branch oluşturun (git checkout -b feature/amazing-feature)
+
+    Commit yapın (git commit -m 'Add amazing feature')
+
+    Push yapın (git push origin feature/amazing-feature)
+
+    Pull Request oluşturun
+
+📜 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır - detaylar için LICENSE dosyasına bakın.
+👨‍💻 Geliştirici
+
+Fatih - Fevkaladenin Fevkinde Setup 🚀
