@@ -4,80 +4,56 @@
 
 Hyprland Setup - Fevkaladenin Fevkinde! 🚀
 
+# Hyprland Setup - Fevkaladenin Fevkinde! 🚀
+
 ![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/hyprland-full.png)  
+![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/wofi1.png)  
 
-📋 İçindekiler
+## 📋 İçindekiler
+- [Özellikler](#-özellikler)
+- [Hızlı Kurulum](#-hızlı-kurulum)
+- [Tuş Atamaları](#-tuş-atamaları)
+- [Workspace Yapısı](#-workspace-yapısı)
+- [Ekran Görüntüleri](#-ekran-görüntüleri)
+- [Sık Kullanılan Komutlar](#-sık-kullanılan-komutlar)
 
-    Özellikler
+## ✨ Özellikler
 
-    Hızlı Kurulum
+### 🎨 Görsel & Tema
+- **Catppuccin Macchiato** renk teması
+- **Terminus** font ailesi
+- **Emoji & İkon** desteği (FontAwesome, JoyPixels, Noto Emoji)
+- **Blur efektleri** ve yuvarlak köşeler
+- **Animasyonlu** workspace geçişleri
 
-    Tuş Atamaları
+### 🛠️ Fonksiyonellik
+- **Fare tekerleği** ile parlaklık kontrolü (Battery modülü üzerinde)
+- **Fare tekerleği** ile ses kontrolü
+- **Workspace scroll** ile hızlı geçiş
+- **Emoji ile workspace'ler** - görsel ve okunaklı
+- **Parlaklık kontrolü** - hem tuş hem fare
+- **Ekran görüntüsü** - tam ekran ve bölge seçimi
 
-    Workspace Yapısı
+### 📦 Entegre Uygulamalar
+- **Waybar** - özelleştirilmiş status bar
+- **Kitty** - terminal emülatörü
+- **Wofi** - uygulama başlatıcı
+- **Thunar** - dosya yöneticisi
+- **Firefox** - web tarayıcı
+- **Neovim** - metin editörü
 
-    Ekran Görüntüleri
+## 🚀 Hızlı Kurulum
 
-    Sık Kullanılan Komutlar
+### Ön Koşullar
+- Arch Linux veya EndeavourOS
+- Hyprland (Wayland compositor)
 
-✨ Özellikler
-🎨 Görsel & Tema
-
-    Catppuccin Macchiato renk teması
-
-    Terminus font ailesi
-
-    Emoji & İkon desteği (FontAwesome, JoyPixels, Noto Emoji)
-
-    Blur efektleri ve yuvarlak köşeler
-
-    Animasyonlu workspace geçişleri
-
-🛠️ Fonksiyonellik
-
-    Fare tekerleği ile parlaklık kontrolü (Battery modülü üzerinde)
-
-    Fare tekerleği ile ses kontrolü
-
-    Workspace scroll ile hızlı geçiş
-
-    Emoji ile workspace'ler - görsel ve okunaklı
-
-    Parlaklık kontrolü - hem tuş hem fare
-
-    Ekran görüntüsü - tam ekran ve bölge seçimi
-
-📦 Entegre Uygulamalar
-
-    Waybar - özelleştirilmiş status bar
-
-    Kitty - terminal emülatörü
-
-    Wofi - uygulama başlatıcı
-
-    Thunar - dosya yöneticisi
-
-    Firefox - web tarayıcı
-
-    Neovim - metin editörü
-
-🚀 Hızlı Kurulum
-Ön Koşullar
-
-    Arch Linux veya EndeavourOS
-
-    Hyprland (Wayland compositor)
-
-Otomatik Kurulum
-bash
-
+### Otomatik Kurulum
+```bash
 # Scripti indir ve çalıştır
-curl -LO https://raw.githubusercontent.com/FatihEsen/hyprland-full-setup/refs/heads/main/hyprland-full-setup.sh
-chmod +x hyprland-setup.sh
-./hyprland-setup.sh
-
-Manuel Kurulum
-bash
+'''curl -LO https://raw.githubusercontent.com/FatihEsen/hyprland-full-setup/refs/heads/main/hyprland-full-setup.sh
+chmod +x hyprland-full-setup.sh
+./hyprland-full-setup.sh'''
 
 # Gerekli paketleri yükle
 sudo pacman -S --needed hyprland waybar dunst kitty thunar firefox wofi neovim \
@@ -159,18 +135,11 @@ chmod +x ~/.config/waybar/scripts/volume.sh
 | **10** | ⭐ | Önemli & Sık kullanılan |
 
 **Aktif Workspace**: 🚀 roket emojisi ile vurgulanır
-🖼️ Ekran Görüntüleri
-text
 
-[Waybar] - Catppuccin temalı, emoji workspace'li
-[Workspace'ler] - Renkli gradient vurgulu
-[Terminal] - Kitty ile Catppuccin teması
-[Uygulama Başlatıcı] - Wofi ile koyu tema
+## 🔧 Sık Kullanılan Komutlar
 
-🔧 Sık Kullanılan Komutlar
-Hyprland Kontrolleri
-bash
-
+### Hyprland Kontrolleri
+'''bash
 # Config reload
 hyprctl reload
 
@@ -183,9 +152,6 @@ hyprctl workspaces
 # Pencere listesi
 hyprctl clients
 
-Sistem Kontrolleri
-bash
-
 # Ses kontrolü
 wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
 wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
@@ -195,46 +161,44 @@ brightnessctl set 5%+
 
 # Ekran görüntüsü
 grim - | wl-copy
-grim -g "$(slurp)" - | wl-copy
+grim -g "$(slurp)" - | wl-copy'''
 
-Waybar Kontrolleri
-bash
+###Waybar Kontrolleri
 
 # Waybar'ı yeniden başlat
-pkill waybar && waybar
+'pkill waybar && waybar'
 
 # Waybar log'larını görüntüle
-waybar -l debug
+'waybar -l debug'
 
-🐛 Sorun Giderme
-Font Problemleri
-bash
+
+###Font Problemleri
 
 # Font'ları kontrol et
 fc-list | grep -i "terminus\|fontawesome\|joypixels"
 
 # Font cache'i yenile
-fc-cache -fv
+'fc-cache -fv'
 
-Waybar Çalışmıyorsa
-bash
+
+###Waybar Çalışmıyorsa
 
 # Config syntax kontrolü
-waybar -c ~/.config/waybar/config.jsonc
+'waybar -c ~/.config/waybar/config.jsonc'
 
 # Log'ları incele
-journalctl -u waybar -f
+'journalctl -u waybar -f'
 
-Hyprland Problemleri
-bash
+###Hyprland Problemleri
 
 # Hyprland log'ları
-journalctl -u hyprland -f
+'journalctl -u hyprland -f'
 
 # Config test
-hyprctl keyword monitor ",preferred,auto,1"
+'hyprctl keyword monitor ",preferred,auto,1"'
 
-🤝 Katkıda Bulunma
+
+###🤝 Katkıda Bulunma
 
 Bu setup'ı geliştirmek için:
 
@@ -248,9 +212,10 @@ Bu setup'ı geliştirmek için:
 
     Pull Request oluşturun
 
-📜 Lisans
+###📜 Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır - detaylar için LICENSE dosyasına bakın.
-👨‍💻 Geliştirici
+###👨‍💻 Geliştirici
 
 Fatih - Fevkaladenin Fevkinde Setup 🚀
+
