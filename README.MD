@@ -133,8 +133,8 @@ chmod +x ~/.config/waybar/scripts/volume.sh
 | **10** | ⭐ | Önemli & Sık kullanılan |
 
 **Aktif Workspace**: 🚀 roket emojisi ile vurgulanır.
-![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/hyprland-full.png)  
-![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/wofi1.png)
+![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/c23c4b5a67eaef9fd8ad9f374a6fff3642ca6c29/screenshots/hyper.png)  
+![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/65a9d34bfc5460d062e6e8ea161a19e9c1c492a5/screenshots/wofi.png)
 ## 🔧 Sık Kullanılan Komutlar
 
 ## Hyprland Kontrolleri
