@@ -1,15 +1,8 @@
-
-![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/hyprland-full.png)  
-
-
 Hyprland Setup - Fevkaladenin Fevkinde! 🚀
 
 # Hyprland Setup - Fevkaladenin Fevkinde! 🚀
 
-![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/hyprland-full.png)  
-![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/wofi1.png)  
-
-## 📋 İçindekiler
+ ## 📋 İçindekiler
 - [Özellikler](#-özellikler)
 - [Hızlı Kurulum](#-hızlı-kurulum)
 - [Tuş Atamaları](#-tuş-atamaları)
@@ -138,8 +131,9 @@ cp -r wofi/ ~/.config/
 | **9** | 📚 | Belgeler & Kitaplar |
 | **10** | ⭐ | Önemli & Sık kullanılan |
 
-**Aktif Workspace**: 🚀 roket emojisi ile vurgulanır
-
+**Aktif Workspace**: 🚀 roket emojisi ile vurgulanır.
+![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/hyprland-full.png)  
+![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/wofi1.png)
 ## 🔧 Sık Kullanılan Komutlar
 
 ### Hyprland Kontrolleri
@@ -166,40 +160,40 @@ brightnessctl set 5%+
 
 # Ekran görüntüsü
 grim - | wl-copy
-grim -g "$(slurp)" - | wl-copy'''
+grim -g "$(slurp)" - | wl-copy
 '''
 ###Waybar Kontrolleri
 '''bash
 # Waybar'ı yeniden başlat
-'pkill waybar && waybar'
+pkill waybar && waybar
 
 # Waybar log'larını görüntüle
-'waybar -l debug'
+waybar -l debug
 '''
 
 ###Font Problemleri
 '''bash
 # Font'ları kontrol et
-fc-list | grep -i "terminus\|fontawesome\|joypixels"
+fc-list | grep -i "terminus\|fontawesome\|joypixels
 
 # Font cache'i yenile
-'fc-cache -fv'
+fc-cache -fv'
 '''
 ###Waybar Çalışmıyorsa
 '''bash
 # Config syntax kontrolü
-'waybar -c ~/.config/waybar/config.jsonc'
+waybar -c ~/.config/waybar/config.jsonc
 
 # Log'ları incele
-'journalctl -u waybar -f'
+journalctl -u waybar -f
 '''
 ###Hyprland Problemleri
 '''bash
 # Hyprland log'ları
-'journalctl -u hyprland -f'
+journalctl -u hyprland -f
 
 # Config test
-'hyprctl keyword monitor ",preferred,auto,1"'
+hyprctl keyword monitor ",preferred,auto,1"
 '''
 
 ###🤝 Katkıda Bulunma
