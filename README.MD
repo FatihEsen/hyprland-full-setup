@@ -1,5 +1,3 @@
-Hyprland Setup - Fevkaladenin Fevkinde! 🚀
-
 # Hyprland Setup - Fevkaladenin Fevkinde! 🚀
 
  ## 📋 İçindekiler
