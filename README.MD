@@ -50,23 +50,28 @@ Hyprland Setup - Fevkaladenin Fevkinde! 🚀
 
 ### Otomatik Kurulum
 # Scripti indir ve çalıştır
-'''curl -LO https://raw.githubusercontent.com/FatihEsen/hyprland-full-setup/refs/heads/main/hyprland-full-setup.sh
+'''bash
+curl -LO https://raw.githubusercontent.com/FatihEsen/hyprland-full-setup/refs/heads/main/hyprland-full-setup.sh
 chmod +x hyprland-full-setup.sh
-./hyprland-full-setup.sh'''
+./hyprland-full-setup.sh
+'''
 
 # Gerekli paketleri yükle
+'''bash
 sudo pacman -S --needed hyprland waybar dunst kitty thunar firefox wofi neovim \
     brightnessctl grim slurp wl-clipboard cliphist pavucontrol \
     ttf-terminus-nerd ttf-font-awesome ttf-joypixels noto-fonts-emoji
-
+'''
 # Config dosyalarını kopyala
+'''bash
+
 cp -r hypr/ ~/.config/
 cp -r waybar/ ~/.config/
 cp -r kitty/ ~/.config/
 cp -r wofi/ ~/.config/
-
+'''
 # Waybar script'ini çalıştırılabilir yap
-chmod +x ~/.config/waybar/scripts/volume.sh
+'chmod +x ~/.config/waybar/scripts/volume.sh'
 
 # ⌨️ Tuş Atamaları
 
@@ -150,8 +155,9 @@ hyprctl workspaces
 
 # Pencere listesi
 hyprctl clients
-
+'''
 # Ses kontrolü
+'''bash
 wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
 wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
@@ -161,41 +167,40 @@ brightnessctl set 5%+
 # Ekran görüntüsü
 grim - | wl-copy
 grim -g "$(slurp)" - | wl-copy'''
-
+'''
 ###Waybar Kontrolleri
-
+'''bash
 # Waybar'ı yeniden başlat
 'pkill waybar && waybar'
 
 # Waybar log'larını görüntüle
 'waybar -l debug'
-
+'''
 
 ###Font Problemleri
-
+'''bash
 # Font'ları kontrol et
 fc-list | grep -i "terminus\|fontawesome\|joypixels"
 
 # Font cache'i yenile
 'fc-cache -fv'
-
-
+'''
 ###Waybar Çalışmıyorsa
-
+'''bash
 # Config syntax kontrolü
 'waybar -c ~/.config/waybar/config.jsonc'
 
 # Log'ları incele
 'journalctl -u waybar -f'
-
+'''
 ###Hyprland Problemleri
-
+'''bash
 # Hyprland log'ları
 'journalctl -u hyprland -f'
 
 # Config test
 'hyprctl keyword monitor ",preferred,auto,1"'
-
+'''
 
 ###🤝 Katkıda Bulunma
 
