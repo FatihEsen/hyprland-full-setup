@@ -43,28 +43,29 @@ Hyprland Setup - Fevkaladenin Fevkinde! 🚀
 
 ### Otomatik Kurulum
 # Scripti indir ve çalıştır
-'''bash
+```bash
 curl -LO https://raw.githubusercontent.com/FatihEsen/hyprland-full-setup/refs/heads/main/hyprland-full-setup.sh
 chmod +x hyprland-full-setup.sh
 ./hyprland-full-setup.sh
-'''
+```
 
 # Gerekli paketleri yükle
-'''bash
+```bash
 sudo pacman -S --needed hyprland waybar dunst kitty thunar firefox wofi neovim \
     brightnessctl grim slurp wl-clipboard cliphist pavucontrol \
     ttf-terminus-nerd ttf-font-awesome ttf-joypixels noto-fonts-emoji
-'''
+```
 # Config dosyalarını kopyala
-'''bash
-
+```bash
 cp -r hypr/ ~/.config/
 cp -r waybar/ ~/.config/
 cp -r kitty/ ~/.config/
 cp -r wofi/ ~/.config/
-'''
+```
 # Waybar script'ini çalıştırılabilir yap
-'chmod +x ~/.config/waybar/scripts/volume.sh'
+```bash
+chmod +x ~/.config/waybar/scripts/volume.sh
+```
 
 # ⌨️ Tuş Atamaları
 
@@ -137,7 +138,7 @@ cp -r wofi/ ~/.config/
 ## 🔧 Sık Kullanılan Komutlar
 
 ## Hyprland Kontrolleri
-'''bash
+```bash
 ### Config reload
 hyprctl reload
 
@@ -149,54 +150,62 @@ hyprctl workspaces
 
 ### Pencere listesi
 hyprctl clients
-'''
-###Ses kontrolü
-'''bash
+```
+
+### Ses kontrolü
+```bash
 wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
 wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+```
 
 ## Parlaklık kontrolü
+```bash
 brightnessctl set 5%+
+```
 
 ### Ekran görüntüsü
+```bash
 grim - | wl-copy
 grim -g "$(slurp)" - | wl-copy
-'''
-##Waybar Kontrolleri
-'''bash
+```
+
+## Waybar Kontrolleri
+```bash
 ### Waybar'ı yeniden başlat
 pkill waybar && waybar
 
 # Waybar log'larını görüntüle
 waybar -l debug
-'''
+```
 
-###Font Problemleri
-'''bash
+### Font Problemleri
+```bash
 # Font'ları kontrol et
-fc-list | grep -i "terminus\|fontawesome\|joypixels
+fc-list | grep -i "terminus\|fontawesome\|joypixels"
 
 # Font cache'i yenile
-fc-cache -fv'
-'''
-##Waybar Çalışmıyorsa
-'''bash
+fc-cache -fv
+```
+
+## Waybar Çalışmıyorsa
+```bash
 # Config syntax kontrolü
 waybar -c ~/.config/waybar/config.jsonc
 
 # Log'ları incele
 journalctl -u waybar -f
-'''
-###Hyprland Problemleri
-'''bash
+```
+
+### Hyprland Problemleri
+```bash
 # Hyprland log'ları
 journalctl -u hyprland -f
 
 # Config test
 hyprctl keyword monitor ",preferred,auto,1"
-'''
+```
 
-###🤝 Katkıda Bulunma
+### 🤝 Katkıda Bulunma
 
 Bu setup'ı geliştirmek için:
 
@@ -210,10 +219,9 @@ Bu setup'ı geliştirmek için:
 
     Pull Request oluşturun
 
-###📜 Lisans
+### 📜 Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır - detaylar için LICENSE dosyasına bakın.
-###👨‍💻 Geliştirici
+### 👨‍💻 Geliştirici
 
 Fatih - Fevkaladenin Fevkinde Setup 🚀
-
