@@ -136,35 +136,35 @@ cp -r wofi/ ~/.config/
 ![Hyprland Screenshot](https://github.com/FatihEsen/hyprland-full-setup/blob/main/screenshots/wofi1.png)
 ## 🔧 Sık Kullanılan Komutlar
 
-### Hyprland Kontrolleri
+## Hyprland Kontrolleri
 '''bash
-# Config reload
+### Config reload
 hyprctl reload
 
-# Mevcut workspace
+### Mevcut workspace
 hyprctl activeworkspace
 
-# Tüm workspace'ler
+### Tüm workspace'ler
 hyprctl workspaces
 
-# Pencere listesi
+### Pencere listesi
 hyprctl clients
 '''
-# Ses kontrolü
+###Ses kontrolü
 '''bash
 wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
 wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
-# Parlaklık kontrolü
+## Parlaklık kontrolü
 brightnessctl set 5%+
 
-# Ekran görüntüsü
+### Ekran görüntüsü
 grim - | wl-copy
 grim -g "$(slurp)" - | wl-copy
 '''
-###Waybar Kontrolleri
+##Waybar Kontrolleri
 '''bash
-# Waybar'ı yeniden başlat
+### Waybar'ı yeniden başlat
 pkill waybar && waybar
 
 # Waybar log'larını görüntüle
@@ -179,7 +179,7 @@ fc-list | grep -i "terminus\|fontawesome\|joypixels
 # Font cache'i yenile
 fc-cache -fv'
 '''
-###Waybar Çalışmıyorsa
+##Waybar Çalışmıyorsa
 '''bash
 # Config syntax kontrolü
 waybar -c ~/.config/waybar/config.jsonc
