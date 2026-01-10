@@ -66,6 +66,9 @@ def_key "4"
 def_key "8"
   show_visualizer
 
+def_key "9"
+  show_clock
+
 # --- Diğer Standartlar ---
 def_key "d"
   delete_playlist_items
