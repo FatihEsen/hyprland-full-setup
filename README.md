@@ -39,6 +39,49 @@ Yeni kurulmuş bir Arch Linux sisteminde terminali açın ve şu adımları izle
 - `.local/bin/`: Özel scriptler ve kilit ekranı sarmalayıcıları.
 - `install.sh`: Otomatik kurulum scripti.
 
+## ⌨️ Temel Tuş Atamaları (Hyprland)
+
+Tüm kısayollar Gruvbox teması ve verimlilik odaklı ayarlanmıştır. `SUPER` tuşu genellikle **Windows** tuşudur.
+
+| Kısayol | İşlem |
+| :--- | :--- |
+| `SUPER + Enter` | Kitty Terminal |
+| `SUPER + Q` | Pencereyi Kapat |
+| `SUPER + D` | Uygulama Menüsü (Wofi) |
+| `SUPER + E` | Dosya Yöneticisi (Thunar) |
+| `SUPER + B` | İnternet Tarayıcısı (Firefox) |
+| `SUPER + V` | Floating Modu Değiştir |
+| `SUPER + F` | Tam Ekran |
+| `SUPER + L` | Ekranı Kilitle |
+| `SUPER + H` | Pano (Clipboard) Geçmişi |
+| `SUPER + N` | Bildirim Merkezi (SwayNC) |
+| `SUPER + C` | Hızlı Notlar (Neovim) |
+| `SUPER + U` | Scratchpad (Gizli Terminal) |
+| `SUPER + Esc` | Güç Menüsü (Kapat/Yeniden Başlat) |
+| `Print` | Tüm Ekran Görüntüsü |
+| `Shift + Print` | Seçili Alan Görüntüsü |
+
+## 🛠️ Uygulama Kılavuzu
+
+### 🎵 Müzik (ncmpcpp & mpd)
+- Müzik dinlemek için terminalde `ncmpcpp` yazın.
+- `1`: Yardım, `2`: Çalma Listesi, `4`: Kütüphane, `8`: Görselleştirici.
+
+### 📂 Dosya Yönetimi (lf & Thunar)
+- Görsel arayüz için `SUPER + E` (Thunar).
+- Terminal tabanlı hızlı gezinti için terminalde `lf` yazın.
+
+### 📝 Not Alma (QuickNotes)
+- `SUPER + C` ile anlık not defterini açabilirsiniz. Bu dosya `~/quicknotes.md` olarak kaydedilir.
+
+### 📋 Pano Yönetimi (Cliphist)
+- `SUPER + H` ile daha önce kopyaladığınız her şeye (metin ve resim) ulaşabilirsiniz.
+
+### 🎨 Görünüm Özelleştirme
+- **Tema:** Gruvbox Dark
+- **Bar:** Waybar (Üstte, şeffaf ve modern)
+- **Bildirimler:** SwayNC (Gruvbox stili)
+
 ## ⚠️ Önemli Notlar
 
 - Script otomatik olarak `sudo` yetkisi isteyecektir.
