@@ -1,29 +1,50 @@
 # ================================================
-# NCMPCPP - FATİH ÖZEL TUŞ ATAMALARI (Türkçe Klavye Dostu)
+# NCMPCPP - FATİH ÖZEL TUŞ ATAMALARI v5 (Final Navigation)
 # ================================================
 
-# --- Navigasyon ---
-def_key "j"
+# --- Navigasyon (Ok Tuşları & Vim Stili) ---
+# Yukarı/Aşağı ok ve j/k ile listede gezilir
+def_key "up"
+  scroll_up
+def_key "down"
   scroll_down
 def_key "k"
   scroll_up
-def_key "h"
+def_key "j"
+  scroll_down
+
+# Sağ/Sol ok ile sütunlar arası geçiş yapılır (Eski h/l yerine)
+def_key "right"
+  next_column
+def_key "left"
   previous_column
 def_key "l"
   next_column
+def_key "h"
+  previous_column
 
-# --- Playlist / Şarkı Ekleme (Senin Tarzın) ---
+# --- SES KONTROLÜ (Ctrl + Ok Tuşları) ---
+# Sağ Ok: Ses Artır
+# Sol Ok: Ses Azalt
+
+def_key "right"
+  volume_up
+def_key "left"
+  volume_down
+
+
+# --- Playlist / Şarkı Ekleme ---
 def_key "space"
   add_item_to_playlist
 def_key "p"
   pause
 
-# --- Şarkı Taşıma (Türkçe Karakterler) ---
-# 'ç' tuşuna basınca AŞAĞI, 'ö' tuşuna basınca YUKARI taşır
-def_key "ç"
-  move_selected_items_down
+# --- Şarkı Taşıma (Türkçe Klavyeye Uygun) ---
+# ö: yukarı taşı, ç: aşağı taşı
 def_key "ö"
   move_selected_items_up
+def_key "ç"
+  move_selected_items_down
 
 # --- Oynatma Kontrolleri ---
 def_key ">"
@@ -35,7 +56,7 @@ def_key "r"
 def_key "z"
   toggle_random
 
-# --- Ekran Değiştirme ---
+# --- Ekran Değiştirme (Hızlı Erişim) ---
 def_key "1"
   show_playlist
 def_key "2"
@@ -45,7 +66,7 @@ def_key "4"
 def_key "8"
   show_visualizer
 
-# --- Diğer ---
+# --- Diğer Standartlar ---
 def_key "d"
   delete_playlist_items
 def_key "u"
