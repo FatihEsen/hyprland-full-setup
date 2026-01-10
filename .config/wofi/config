@@ -1,0 +1,9 @@
+width=500
+height=400
+location=center
+prompt=Search
+allow_images=true
+image_size=32
+font=Terminus 14
+allow_markup=true
+term=kitty

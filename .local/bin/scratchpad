@@ -1,0 +1,9 @@
+#!/bin/bash
+# Çalışan pencereler arasında scratchpad sınıfına sahip olan var mı kontrol et
+if hyprctl clients | grep -q "class: scratchpad"; then
+    # Varsa gizle/göster
+    hyprctl dispatch togglespecialworkspace scratchpad
+else
+    # Yoksa (veya kapattıysan) yenisini aç
+    kitty --class scratchpad &
+fi

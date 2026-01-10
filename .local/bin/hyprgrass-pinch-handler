@@ -1,0 +1,8 @@
+#!/bin/bash
+fingers=$1 delta=$2
+if (( $(echo "$delta > 0.1" | bc -l) )); then
+    hyprctl keyword general:border_size $(( $(hyprctl getoption general:border_size -j | gojq '.int') + 1 ))
+else
+    size=$(hyprctl getoption general:border_size -j | gojq '.int')
+    ((size>2)) && hyprctl keyword general:border_size $((size-1))
+fi

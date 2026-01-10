@@ -1,0 +1,105 @@
+BRIGHTNESS_FILE="${XDG_RUNTIME_DIR:-/tmp}/hyprlock-brightness.txt"
+PLAYERS_FILE="${XDG_RUNTIME_DIR:-/tmp}/hyprlock-playing-players.txt"
+
+notify_user() {
+    local summary="$1" body="$2" urgency="${3:-low}" timeout="${4:-2000}"
+    notify-send --app-name="Hyprlock" --urgency="$urgency" --expire-time="$timeout" "$summary" "$body"
+}
+
+# --- Backlight fonksiyonları (ÖNEMLİ: Bu fonksiyonların TAM içeriğini buraya eklemelisiniz.) ---
+# Eğer bu fonksiyonlar dışarıdan yüklenmiyorsa, tanımlı olmaları gerekir.
+# ÖRNEK:
+find_backlight() {
+    # Bu fonksiyon, kullanılan arka ışık aygıtını bulmalıdır
+    echo $(ls -1 /sys/class/backlight/ | head -n 1) 
+}
+
+get_brightness_percent() {
+    DEVICE=$(find_backlight)
+    if [ -z "$DEVICE" ]; then echo 100; return; fi
+    MAX=$(cat /sys/class/backlight/$DEVICE/max_brightness)
+    NOW=$(cat /sys/class/backlight/$DEVICE/actual_brightness)
+    echo $((NOW * 100 / MAX))
+}
+
+set_brightness_percent() {
+    local percent=$1
+    DEVICE=$(find_backlight)
+    if [ -z "$DEVICE" ]; then return; fi
+    MAX=$(cat /sys/class/backlight/$DEVICE/max_brightness)
+    TARGET=$((MAX * percent / 100))
+    brightnessctl -d $DEVICE set $TARGET
+}
+# --- Backlight fonksiyonları sonu ---
+
+get_players() { playerctl --list-all 2>/dev/null |
+grep -v '^$'; }
+is_player_playing() { [[ "$(playerctl -p "$1" status 2>/dev/null)" == "Playing" ]];
+}
+
+# 🔁 Hypridle’ı sıfırla (idle süresini resetler)
+reset_hypridle() {
+    # DPMS'i geçici olarak kapatıp açmak yerine, ekranı sadece uyandırıyoruz (dpms on)
+    hyprctl dispatch dpms on 2>/dev/null || true
+    sleep 0.1
+    # hyprctl dispatch dpms off 2>/dev/null || true  # Bu satır artık gerekli değil/önerilmiyor
+}
+
+# ———— 1. Durumları kaydet ————
+{
+    brightness_now=$(get_brightness_percent) && echo "$brightness_now" > "$BRIGHTNESS_FILE"
+    > "$PLAYERS_FILE"
+    while IFS= read -r player;
+do
+        is_player_playing "$player" && echo "$player" >> "$PLAYERS_FILE"
+    done < <(get_players)
+} &>/dev/null
+
+# ———— 2. Kilit öncesi ————
+{
+    # 🌙 Parlaklığı düşür
+    [[ -f "$BRIGHTNESS_FILE" ]] && set_brightness_percent 10
+
+    # ⏸️ Medyayı durdur
+    while IFS= read -r player;
+do playerctl -p "$player" pause 2>/dev/null; done < <(get_players)
+    [ -S /tmp/mpvsocket ] && echo '{ "command": ["set", "pause", true] }' |
+socat - /tmp/mpvsocket 2>/dev/null
+
+    # 🔔 Bildirim
+    notify_user "🌙🔒 Kilitleniyor" "Medya durduruldu, parlaklık düşürüldü."
+"normal" 2000
+
+    # 🔄 Hypridle’ı sıfırla — BU ÖNEMLİ!
+reset_hypridle
+} &>/dev/null
+
+# ———— 3. Asıl kilit ————
+hyprlock  # timeout kaldırıldı;
+# çünkü hypridle zaman yönetimi üstleniyor
+
+# ———— 4. Kilidi açınca ————
+{
+    # 🌞 Parlaklık & medya geri
+    [[ -f "$BRIGHTNESS_FILE" ]] && { set_brightness_percent "$(cat "$BRIGHTNESS_FILE")";
+rm -f "$BRIGHTNESS_FILE"; }
+    restarted=0
+    [[ -s "$PLAYERS_FILE" ]] && {
+        while IFS= read -r player;
+do
+            playerctl -p "$player" status &>/dev/null && playerctl -p "$player" play 2>/dev/null && ((restarted++))
+        done < "$PLAYERS_FILE"
+        rm -f "$PLAYERS_FILE"
+    }
+
+    # 💡 Ekranı tekrar aç:
+    hyprctl dispatch dpms on 2>/dev/null || true
+
+    # 🔔 Bildirim
+    if (( restarted > 0 ));
+then
+        notify_user "🌞🔊 Devam Ediyor" "Parlaklık ve $restarted oynatıcı geri yüklendi."
+else
+        notify_user "🌞 Parlaklık geri yüklendi" ""
+    fi
+} &>/dev/null

@@ -1,0 +1,21 @@
+# --- Temel Ayarlar ---
+set shell opts
+set shell sh
+set hidden true
+set icons true
+set ignorecase true
+
+# --- Önizleme (Preview) Ayarları ---
+set previewer ~/.config/lf/pv.sh
+set cleaner ~/.config/lf/cleaner.sh
+set drawbox
+
+# --- Tuş Atamaları (İsteğe Bağlı) ---
+map <esc> quit
+map . set hidden!
+map <enter> open
+map w &swww img "$f" --transition-type grow --transition-pos center --transition-duration 2 && notify-send "Wallpaper" "Görsel ayarlandı: $(basename "$f")"
+
+# --- Kitty Görüntü Hack'i ---
+# Dosya üzerinde hareket ederken eski resmi temizler
+$mkdir -p ~/.cache/lf

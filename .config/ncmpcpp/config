@@ -1,0 +1,144 @@
+# ================================================
+# NCMPCPP - GRUVBOX PREMIUM EDITION
+# ================================================
+
+# --- MPD Bağlantısı ---
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_connection_timeout = "5"
+mpd_music_dir = "~/Müzik"
+
+# --- Dizinler ---
+ncmpcpp_directory = "~/.config/ncmpcpp"
+lyrics_directory = "~/.lyrics"
+
+# --- Görünüm Ayarları ---
+user_interface = "alternative"
+playlist_display_mode = "columns"
+browser_display_mode = "columns"
+search_engine_display_mode = "columns"
+playlist_editor_display_mode = "columns"
+
+# --- Görünürlük ---
+statusbar_visibility = "yes"
+header_visibility = "yes"
+titles_visibility = "yes"
+connected_message_on_startup = "yes"
+clock_display_seconds = "no"
+display_volume_level = "yes"
+display_bitrate = "yes"
+display_remaining_time = "no"
+
+# --- Oynatma Çubuğu (Gruvbox Turuncu) ---
+progressbar_look = "━━━"
+
+# --- Liste Formatları ---
+song_list_format = "{$8%a - $5}{$5%t$9}|{$8%f$9}$R{$6%b $9}{$3(%l)$9}"
+song_status_format = "{{$8%a{ $3//$9 }$5%t}}|{$5%f}{ - $6%b{ ($3%y$6)}}}"
+song_library_format = "{%n - }{%t}|{%f}"
+alternative_header_first_line_format = "$b$5$/b$8{%t}|{%f}$8$/b"
+alternative_header_second_line_format = "{{$6%a$9}{ - $3%b$9}{ ($8%y$9)}}|{%D}"
+
+now_playing_prefix = "$b$5▶$9$/b "
+now_playing_suffix = "$/b"
+
+# --- Sütun Ayarları ---
+song_columns_list_format = "(20)[blue]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}"
+
+# --- GRUVBOX RENK ŞEMASI ---
+colors_enabled = "yes"
+
+# Ana renkler
+main_window_color = "white"
+color1 = "yellow"
+color2 = "red"
+
+# Başlık
+header_window_color = "yellow"
+volume_color = "green"
+state_line_color = "yellow"
+state_flags_color = "red:b"
+
+# Oynatma çubuğu (Gruvbox Turuncu)
+progressbar_color = "black"
+progressbar_elapsed_color = "yellow:b"
+
+# Durum çubuğu
+statusbar_color = "white"
+statusbar_time_color = "cyan:b"
+
+# Pencere başlıkları
+window_border_color = "yellow"
+active_window_border = "red"
+
+# Alternatif UI renkleri
+alternative_ui_separator_color = "yellow"
+
+# Görselleştirici renkleri
+visualizer_color = "yellow, red, green, cyan, magenta"
+
+# Seçili öğeler
+current_item_prefix = "$(yellow)$r"
+current_item_suffix = "$/r$(end)"
+current_item_inactive_column_prefix = "$(white)$r"
+current_item_inactive_column_suffix = "$/r$(end)"
+
+# --- Görselleştirici (Gelişmiş Ayarlar) ---
+visualizer_data_source = "~/.config/mpd/mpd.fifo"
+visualizer_output_name = "Visualizer"
+visualizer_in_stereo = "yes"
+
+# Görselleştirici tipi (V tuşu ile değiştirilebilir)
+# Seçenekler: spectrum, wave, wave_filled, ellipse
+visualizer_type = "spectrum"
+
+# Spectrum (Bar) ayarları - En canlı mod
+visualizer_look = "●▮"
+visualizer_spectrum_smooth_look = "yes"
+visualizer_spectrum_dft_size = "2"
+visualizer_spectrum_gain = "10"
+visualizer_spectrum_hz_min = "20"
+visualizer_spectrum_hz_max = "20000"
+
+# Wave (Dalga) ayarları - Alternatif görünüm için
+# visualizer_look = "●▮"  # veya "▮▮" veya "●●"
+
+# Ellipse (Elips) ayarları - Daha yumuşak
+# visualizer_look = "●●"
+
+# --- Arama ---
+search_engine_default_search_mode = "2"
+incremental_seeking = "yes"
+seek_time = "1"
+
+# --- Çeşitli ---
+autocenter_mode = "yes"
+centered_cursor = "yes"
+ignore_leading_the = "yes"
+media_library_primary_tag = "album_artist"
+external_editor = "nvim"
+use_console_editor = "yes"
+
+# --- Mouse Desteği ---
+mouse_support = "yes"
+mouse_list_scroll_whole_page = "no"
+
+# --- Performans ---
+playlist_disable_highlight_delay = "0"
+message_delay_time = "1"
+
+# --- Ekran Modu ---
+startup_screen = "playlist"
+startup_slave_screen = "visualizer"
+startup_slave_screen_focus = "no"
+locked_screen_width_part = "50"
+ask_for_locked_screen_width_part = "yes"
+
+# --- Lyrics ---
+store_lyrics_in_song_dir = "no"
+generate_win32_compatible_filenames = "yes"
+
+# --- Diğer ---
+allow_for_physical_item_deletion = "no"
+space_add_mode = "add_remove"
+show_hidden_files_in_local_browser = "no"

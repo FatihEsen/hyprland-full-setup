@@ -1,0 +1,8 @@
+#!/bin/bash
+fingers=$1 dx=$2 dy=$3 state=$4
+[[ $state == "end" ]] && exit 0
+if (( $(echo "$dx > 100" | bc -l) )); then
+    hyprctl dispatch workspace -1
+elif (( $(echo "$dx < -100" | bc -l) )); then
+    hyprctl dispatch workspace +1
+fi

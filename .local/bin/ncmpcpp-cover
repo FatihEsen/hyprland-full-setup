@@ -1,0 +1,13 @@
+#!/bin/bash
+# ================================================
+# NCMPCPP Launcher with Album Cover
+# ================================================
+
+# Albüm kapağını göster (arka planda)
+~/.config/ncmpcpp/cover.sh &
+
+# ncmpcpp'yi başlat
+ncmpcpp "$@"
+
+# Çıkışta Kitty görüntülerini temizle
+kitten icat --clear --silent 2>/dev/null
