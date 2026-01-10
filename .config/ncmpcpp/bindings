@@ -1,131 +1,54 @@
 # ================================================
-# NCMPCPP - GELIŞMIŞ TUŞ ATAMALARI
+# NCMPCPP - FATİH ÖZEL TUŞ ATAMALARI (Türkçe Klavye Dostu)
 # ================================================
 
-# --- Vim Tarzı Navigasyon ---
+# --- Navigasyon ---
 def_key "j"
   scroll_down
-
 def_key "k"
   scroll_up
-
 def_key "h"
   previous_column
-
 def_key "l"
   next_column
 
-def_key "ctrl-u"
-  page_up
-
-def_key "ctrl-d"
-  page_down
-
-def_key "g"
-  move_home
-
-def_key "G"
-  move_end
-
-# --- Oynatma Kontrolleri ---
+# --- Playlist / Şarkı Ekleme (Senin Tarzın) ---
 def_key "space"
+  add_item_to_playlist
+def_key "p"
   pause
 
+# --- Şarkı Taşıma (Türkçe Karakterler) ---
+# 'ç' tuşuna basınca AŞAĞI, 'ö' tuşuna basınca YUKARI taşır
+def_key "ç"
+  move_selected_items_down
+def_key "ö"
+  move_selected_items_up
+
+# --- Oynatma Kontrolleri ---
 def_key ">"
   next
-
 def_key "<"
   previous
-
-def_key "="
-  volume_up
-
-def_key "-"
-  volume_down
-
 def_key "r"
   toggle_repeat
-
 def_key "z"
   toggle_random
-
-def_key "y"
-  toggle_single
-
-def_key "R"
-  toggle_consume
-
-def_key "x"
-  toggle_crossfade
-
-# --- Arama ve Filtreleme ---
-def_key "/"
-  find
-
-def_key "?"
-  find_item_backward
-
-def_key "n"
-  next_found_item
-
-def_key "N"
-  previous_found_item
-
-# --- Playlist İşlemleri ---
-def_key "d"
-  delete_playlist_items
-
-def_key "D"
-  delete_stored_playlist
-
-def_key "s"
-  save_playlist
-
-def_key "a"
-  add_item_to_playlist
-
-def_key "A"
-  add
 
 # --- Ekran Değiştirme ---
 def_key "1"
   show_playlist
-
 def_key "2"
   show_browser
-
-def_key "3"
-  show_search_engine
-
 def_key "4"
   show_media_library
-
-def_key "5"
-  show_playlist_editor
-
-def_key "6"
-  show_tag_editor
-
-def_key "7"
-  show_outputs
-
 def_key "8"
   show_visualizer
 
-def_key "9"
-  show_clock
-
-# --- Görselleştirici Kontrolleri ---
-def_key "v"
-  show_visualizer
-
-def_key "V"
-  toggle_visualization_type
-
-# --- Güncelleme ve Yenileme ---
+# --- Diğer ---
+def_key "d"
+  delete_playlist_items
 def_key "u"
   update_database
-
-# --- Çıkış ---
 def_key "q"
   quit

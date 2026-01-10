@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# ================================================
+# ARCH-MECHANIC CLEANUP SCRIPT 🧹
+# "Sistemi ilk günkü saflığına döndürür"
+# ================================================
+
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+echo -e "${BLUE}>>> Temizlik operasyonu başlıyor...${NC}"
+
+# 1. Paket Önbelleği Temizliği (pacman & yay)
+echo -e "${YELLOW}[1/4] Paket önbelleği temizleniyor...${NC}"
+sudo pacman -Sc --noconfirm
+yay -Sc --noconfirm
+
+# 2. Yetim Paketlerin (Orphans) Kaldırılması
+if [ -n "$(pacman -Qtdq)" ]; then
+    echo -e "${YELLOW}[2/4] Yetim paketler kaldırılıyor...${NC}"
+    sudo pacman -Rns $(pacman -Qtdq) --noconfirm
+else
+    echo -e "${GREEN}[2/4] Yetim paket bulunamadı.${NC}"
+fi
+
+# 3. Config Yedeklerinin (.bak) ve Logların Temizliği
+echo -e "${YELLOW}[3/4] Gereksiz yedek dosyaları ve loglar taranıyor...${NC}"
+
+# .bak , .tmp ve eski log dosyalarını sil
+find ~/.config -name "*.bak" -type f -delete
+find ~/.config -name "*.tmp" -type f -delete
+find ~/.local/state -name "*.log" -type f -mtime +30 -delete
+
+# KDE kalıntıları (Zsh geçmişinde gördüğümüz o meşhur temizlik)
+rm -f ~/.config/kdeglobals
+rm -f ~/.config/kiorc
+rm -f ~/.config/ktrashrc
+rm -f ~/.config/dolphinrc
+
+echo -e "${GREEN}>>> Gereksiz dosyalar temizlendi.${NC}"
+
+# 4. Thumbnail (Küçük Resim) ve Önbellek Temizliği
+echo -e "${YELLOW}[4/4] Thumbnail ve genel cache temizleniyor...${NC}"
+rm -rf ~/.cache/thumbnails/*
+# İsteğe bağlı: 30 günden eski cache dosyalarını sil
+find ~/.cache -type f -atime +30 -delete
+
+echo -e "${BLUE}==================================================${NC}"
+echo -e "${GREEN}   TEMİZLİK TAMAMLANDI! Sistemin mermi gibi.   ${NC}"
+echo -e "${BLUE}==================================================${NC}"
