@@ -2,7 +2,19 @@
 
 Bu depo, kişiselleştirilmiş bir Arch Linux (Hyprland odaklı) kurulumunu saniyeler içinde tamamlaman için hazırlanmıştır.
 
-## 🚀 Neleri Kurar?
+## � Ekran Görüntüleri
+
+<p align="center">
+  <img src="screenshots/1.png" width="45%" />
+  <img src="screenshots/2.png" width="45%" />
+</p>
+<p align="center">
+  <img src="screenshots/3.png" width="30%" />
+  <img src="screenshots/4.png" width="30%" />
+  <img src="screenshots/5.png" width="30%" />
+</p>
+
+## �🚀 Neleri Kurar?
 
 - **Pencere Yöneticisi:** Hyprland
 - **Panel:** Waybar
