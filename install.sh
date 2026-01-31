@@ -31,15 +31,18 @@ else
     echo -e "${GREEN}yay zaten kurulu.${NC}"
 fi
 
-# 3. Paket Listesi (Senin sistemindeki tüm kritik uygulamalar)
+# 3. Paket Listesi
 echo -e "${YELLOW}[3/6] Paketler kuruluyor...${NC}"
 
+SCRIPT_DIR=$(dirname "$(realpath "$0")")
+
+# Varsayılan paketler (Dosyalar yoksa kullanılacak)
 OFFICIAL_PKGS=(
     "hyprland" "waybar" "swaync" "kitty" "neovim" "lf" "ncmpcpp" "mpd" "cava" 
     "wofi" "thunar" "htop" "mpv" "brightnessctl" "wireplumber" "grim" "slurp" 
     "wl-clipboard" "libnotify" "hypridle" "hyprlock" "network-manager-applet" 
     "blueman" "pavucontrol" "xdg-desktop-portal-hyprland" "qt5-wayland" "qt6-wayland"
-    "fastfetch" "ttf-jetbrains-mono-nerd" "ttf-font-awesome" "papirus-icon-theme"
+    "fastfetch" "ttf-jetbrains-mono-nerd" "ttf-font-awesome" "papirus-icon-theme" "zsh" "stow"
 )
 
 AUR_PKGS=(
@@ -47,11 +50,23 @@ AUR_PKGS=(
     "bibata-cursor-theme-bin" "nwg-look"
 )
 
-echo -e "${BLUE}Resmi paketler kuruluyor...${NC}"
-sudo pacman -S --noconfirm --needed "${OFFICIAL_PKGS[@]}"
+# Resmi paketleri kur
+if [ -f "$SCRIPT_DIR/pkglist.txt" ]; then
+    echo -e "${BLUE}pkglist.txt bulundu, paketler kuruluyor...${NC}"
+    sudo pacman -S --noconfirm --needed - < "$SCRIPT_DIR/pkglist.txt"
+else
+    echo -e "${BLUE}Varsayılan resmi paketler kuruluyor...${NC}"
+    sudo pacman -S --noconfirm --needed "${OFFICIAL_PKGS[@]}"
+fi
 
-echo -e "${BLUE}AUR paketleri kuruluyor...${NC}"
-yay -S --noconfirm --needed "${AUR_PKGS[@]}"
+# AUR paketlerini kur
+if [ -f "$SCRIPT_DIR/aurpkglist.txt" ]; then
+    echo -e "${BLUE}aurpkglist.txt bulundu, paketler kuruluyor...${NC}"
+    yay -S --noconfirm --needed - < "$SCRIPT_DIR/aurpkglist.txt"
+else
+    echo -e "${BLUE}Varsayılan AUR paketleri kuruluyor...${NC}"
+    yay -S --noconfirm --needed "${AUR_PKGS[@]}"
+fi
 
 # 4. ZSH & Oh-My-Zsh Setup
 if [ ! -d "$HOME/.oh-my-zsh" ]; then

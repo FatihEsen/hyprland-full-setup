@@ -1,0 +1,4 @@
+dwarfs-bin
+optimus-manager-git
+ttf-joypixels
+yay-bin

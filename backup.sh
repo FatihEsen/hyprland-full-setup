@@ -39,7 +39,14 @@ if [ -f "$HOME/.zshrc" ]; then
     cp "$HOME/.zshrc" "$DOTFILES_DIR/"
 fi
 
-echo -e "${GREEN}Tüm dosyalar $DOTFILES_DIR içine kopyalandı.${NC}"
+# Paket listelerini güncelle
+echo -e "${YELLOW}Paket listeleri güncelleniyor...${NC}"
+# Resmi paketler (explicitly installed, not as dependencies)
+pacman -Qqen > "$DOTFILES_DIR/pkglist.txt"
+# AUR paketleri (explicitly installed from AUR)
+pacman -Qqem > "$DOTFILES_DIR/aurpkglist.txt"
+
+echo -e "${GREEN}Tüm dosyalar ve paket listeleri $DOTFILES_DIR içine kopyalandı.${NC}"
 
 # Git İşlemleri
 cd "$DOTFILES_DIR" || exit
