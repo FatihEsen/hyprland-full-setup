@@ -29,56 +29,56 @@ display_volume_level = "yes"
 display_bitrate = "yes"
 display_remaining_time = "no"
 
-# --- Oynatma Çubuğu (Gruvbox Turuncu) ---
+# --- Oynatma Çubuğu (Catppuccin Mauve) ---
 progressbar_look = "━━━"
 
 # --- Liste Formatları ---
-song_list_format = "{$8%a - $5}{$5%t$9}|{$8%f$9}$R{$6%b $9}{$3(%l)$9}"
-song_status_format = "{{$8%a{ $3//$9 }$5%t}}|{$5%f}{ - $6%b{ ($3%y$6)}}}"
+song_list_format = "{$5%a - $7}{$7%t$9}|{$5%f$9}$R{$6%b $9}{$3(%l)$9}"
+song_status_format = "{{$5%a{ $3//$9 }$7%t}}|{$7%f}{ - $6%b{ ($3%y$6)}}}"
 song_library_format = "{%n - }{%t}|{%f}"
-alternative_header_first_line_format = "$b$5$/b$8{%t}|{%f}$8$/b"
-alternative_header_second_line_format = "{{$6%a$9}{ - $3%b$9}{ ($8%y$9)}}|{%D}"
+alternative_header_first_line_format = "$b$5$/b$7{%t}|{%f}$7$/b"
+alternative_header_second_line_format = "{{$6%a$9}{ - $3%b$9}{ ($5%y$9)}}|{%D}"
 
 now_playing_prefix = "$b$5▶$9$/b "
 now_playing_suffix = "$/b"
 
 # --- Sütun Ayarları ---
-song_columns_list_format = "(20)[blue]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}"
+song_columns_list_format = "(20)[magenta]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[blue]{l}"
 
-# --- GRUVBOX RENK ŞEMASI ---
+# --- CATPPUCCIN RENK ŞEMASI ---
 colors_enabled = "yes"
 
 # Ana renkler
 main_window_color = "white"
-color1 = "yellow"
-color2 = "red"
+color1 = "white"
+color2 = "magenta"
 
 # Başlık
-header_window_color = "yellow"
-volume_color = "green"
-state_line_color = "yellow"
+header_window_color = "magenta"
+volume_color = "blue"
+state_line_color = "magenta"
 state_flags_color = "red:b"
 
-# Oynatma çubuğu (Gruvbox Turuncu)
+# Oynatma çubuğu
 progressbar_color = "black"
-progressbar_elapsed_color = "yellow:b"
+progressbar_elapsed_color = "magenta:b"
 
 # Durum çubuğu
 statusbar_color = "white"
 statusbar_time_color = "cyan:b"
 
 # Pencere başlıkları
-window_border_color = "yellow"
-active_window_border = "red"
+window_border_color = "magenta"
+active_window_border = "magenta"
 
 # Alternatif UI renkleri
-alternative_ui_separator_color = "yellow"
+alternative_ui_separator_color = "magenta"
 
 # Görselleştirici renkleri
-visualizer_color = "yellow, red, green, cyan, magenta"
+visualizer_color = "magenta, blue, cyan, green, yellow, red"
 
 # Seçili öğeler
-current_item_prefix = "$(yellow)$r"
+current_item_prefix = "$(magenta)$r"
 current_item_suffix = "$/r$(end)"
 current_item_inactive_column_prefix = "$(white)$r"
 current_item_inactive_column_suffix = "$/r$(end)"

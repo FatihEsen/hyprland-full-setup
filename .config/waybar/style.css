@@ -1,3 +1,5 @@
+@import "mocha.css";
+
 * {
     font-family: "JetBrainsMono Nerd Font", "Noto Color Emoji", sans-serif;
     font-size: 14px;
@@ -7,7 +9,7 @@
 
 window#waybar {
     background-color: transparent;
-    color: #ebdbb2;
+    color: @text;
 }
 
 tooltip {
@@ -17,15 +19,14 @@ tooltip {
 }
 
 tooltip label {
-    background: #282828;
-    border: 1px solid #fe8019;
+    background: @base;
+    border: 1px solid @mauve;
     border-radius: 6px;
     padding: 12px;
     font-size: 18px;
     margin: 5px;
-    color: #ebdbb2;
+    color: @text;
 }
-
 
 window#waybar.hidden {
     opacity: 0.2;
@@ -35,8 +36,8 @@ window#waybar.hidden {
 .modules-left,
 .modules-center,
 .modules-right {
-    background-color: #282828;
-    border: 1px solid #fe8019;
+    background-color: @base;
+    border: 1px solid @mauve;
     border-radius: 6px;
     padding: 2px 10px;
     transition: all 0.3s ease;
@@ -53,27 +54,27 @@ window#waybar.hidden {
 #workspaces button {
     padding: 0px 10px;
     background-color: transparent;
-    color: #928374;
+    color: @overlay0;
     border-radius: 6px;
     transition: all 0.3s ease;
 }
 
 #workspaces button:hover {
-    color: #914b11;
-    background: rgba(254, 128, 25, 0.2);
+    color: @mauve;
+    background: rgba(203, 166, 247, 0.2);
 }
 
 #workspaces button.active {
-    color: #fe8019;
+    color: @mauve;
 }
 
 #workspaces button.urgent {
-    color: #fb4934;
+    color: @red;
     animation: blink 0.5s linear infinite alternate;
 }
 
 #window {
-    color: #bdae93;
+    color: @subtext0;
     margin-left: 10px;
     font-weight: normal;
 }
@@ -102,73 +103,73 @@ window#waybar.hidden {
 #network:hover,
 #pulseaudio:hover,
 #custom-weather:hover {
-    background: rgba(143, 89, 45, 0.15);
+    background: rgba(203, 166, 247, 0.15);
 }
 
 #clock {
-    color: #f9b883;
+    color: @peach;
 }
 
 #custom-weather {
-    color: #83a598;
+    color: @sky;
 }
 
 #custom-notification {
-    color: #fe8019;
+    color: @mauve;
 }
 
 #pulseaudio {
-    color: #83a598;
+    color: @sapphire;
 }
 
 #pulseaudio.muted {
-    color: #928374;
+    color: @overlay0;
     text-decoration: line-through;
 }
 
 #network {
-    color: #8ec07c;
+    color: @green;
     min-width: 200px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 #network.disconnected {
-    color: #fb4934;
+    color: @red;
 }
 
 #cpu {
-    color: #d3869b;
+    color: @pink;
 }
 
 #memory {
-    color: #fabd2f;
+    color: @yellow;
 }
 
 #temperature {
-    color: #b16286;
+    color: @maroon;
 }
 
 #temperature.critical {
-    color: #fb4934;
+    color: @red;
     animation: blink 1s linear infinite;
 }
 
 #battery {
-    color: #b8bb26;
+    color: @teal;
 }
 
 #battery.charging,
 #battery.plugged {
-    color: #8ec07c;
+    color: @green;
 }
 
 #battery.warning:not(.charging) {
-    color: #fe8019;
+    color: @peach;
 }
 
 #battery.critical:not(.charging) {
-    color: #fb4934;
+    color: @red;
     animation: blink 0.5s linear infinite alternate;
 }
 
@@ -178,7 +179,7 @@ window#waybar.hidden {
 
 #tray>.needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #fb4934;
+    background-color: @red;
 }
 
 @keyframes blink {

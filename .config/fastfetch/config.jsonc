@@ -8,8 +8,8 @@
             "left": 4
         },
         "color": {
-            "1": "#f9b883",
-            "2": "#ebdbb2"
+            "1": "#cba6f7", // Mauve
+            "2": "#89b4fa"  // Blue
         },
         "height": 12
     },
@@ -18,99 +18,100 @@
         {
             "type": "title",
             "color": {
-                "user": "#d3869b",
-                "at": "#ebdbb2",
-                "host": "#83a598"
+                "user": "#cba6f7", // Mauve
+                "at": "#cdd6f4",   // Text
+                "host": "#89b4fa"  // Blue
             },
             "separator": "  "
         },
         "break",
         {
             "type": "separator",
-            "separator": "───────────────"
+            "separator": "───────────────",
+            "color": "#6c7086" // Overlay0
         },
         {
             "type": "os",
             "key": " OS",
-            "keyColor": "#f9b883",
+            "keyColor": "#fab387", // Peach
             "format": "{pretty-name}",
             "separator": "  "
         },
         {
             "type": "kernel",
             "key": " Kernel",
-            "keyColor": "#fe8019",
+            "keyColor": "#f38ba8", // Red
             "format": "{release}",
             "separator": "  "
         },
         {
             "type": "de",
             "key": "󰉼 DE",
-            "keyColor": "#b8bb26",
+            "keyColor": "#a6e3a1", // Green
             "format": "Hyprland",
             "separator": "  "
         },
         {
             "type": "wm",
             "key": "󰖲 WM",
-            "keyColor": "#b8bb26",
+            "keyColor": "#a6e3a1", // Green
             "format": "Hyprland",
             "separator": "  "
         },
         {
             "type": "terminal",
             "key": " Term",
-            "keyColor": "#d3869b",
+            "keyColor": "#cba6f7", // Mauve
             "separator": "  "
         },
         {
             "type": "shell",
             "key": " Shell",
-            "keyColor": "#fb4934",
+            "keyColor": "#f38ba8", // Red
             "separator": "  "
         },
         {
             "type": "packages",
             "key": "󰏖 Paket",
-            "keyColor": "#8ec07c",
+            "keyColor": "#94e2d5", // Teal
             "separator": "  "
         },
         {
             "type": "uptime",
             "key": "󰅶 Uptime",
-            "keyColor": "#fe8019",
+            "keyColor": "#fab387", // Peach
             "separator": "  "
         },
         {
             "type": "cpu",
             "key": "󰍛 CPU",
-            "keyColor": "#d3869b",
+            "keyColor": "#cba6f7", // Mauve
             "format": "{name}",
             "separator": "  "
         },
         {
             "type": "gpu",
             "key": "󰢮 GPU",
-            "keyColor": "#8ec07c",
+            "keyColor": "#94e2d5", // Teal
             "separator": "  "
         },
         {
             "type": "memory",
             "key": "󰘚 RAM",
-            "keyColor": "#fabd2f",
+            "keyColor": "#f9e2af", // Yellow
             "separator": "  "
         },
         {
             "type": "disk",
             "key": " Disk",
-            "keyColor": "#b8bb26",
+            "keyColor": "#a6e3a1", // Green
             "folders": "/",
             "separator": "  "
         },
         {
             "type": "battery",
             "key": "󰂄 Batarya",
-            "keyColor": "#fe8019",
+            "keyColor": "#fab387", // Peach
             "separator": "  "
         },
         "break",

@@ -3,18 +3,18 @@
   "positionX": "right",
   "positionY": "top",
   "layer": "overlay",
-  "control-center-layer": "overlay",
+  "control-center-layer": "top",
   "layer-shell": true,
-  "cssPriority": "user",
-  "control-center-margin-top": 50,
-  "control-center-margin-bottom": 50,
+  "cssPriority": "application",
+  "control-center-margin-top": 10,
+  "control-center-margin-bottom": 100,
   "control-center-margin-right": 10,
-  "control-center-margin-left": 0,
+  "control-center-margin-left": 10,
   "notification-2fa-action": true,
   "notification-inline-replies": true,
   "notification-window-width": 500,
   "control-center-width": 500,
-  "control-center-height": 700,
+  "control-center-height": 600,
   "fit-to-screen": false,
   "keyboard-shortcuts": true,
   "image-visibility": "when-available",
@@ -41,10 +41,11 @@
       "text": "Rahatsız Etmeyin"
     },
     "mpris": {
-      "image-size": 96
+      "image-size": 96,
+      "image-radius": 12
     },
     "volume": {
-      "label": ""
+      "label": ""
     },
     "backlight": {
       "label": "󰃠"
@@ -66,34 +67,25 @@
           "command": "bash /home/fatih/.config/swaync/scripts/toggle_bt.sh"
         },
         {
-          "label": "󰕾",
-          "command": "pavucontrol",
-          "tooltip": "Ses Ayarları"
+          "label": "󰂯",
+          "command": "bash /home/fatih/.config/swaync/scripts/toggle_bt.sh",
+          "type": "toggle"
         },
         {
-          "label": "󰛳",
-          "command": "kitty --class nmtui -e nmtui",
-          "tooltip": "Ağ Ayarları"
+          "label": "",
+          "command": "pavucontrol"
         },
         {
-          "label": "",
-          "command": "kitty",
-          "tooltip": "Terminal"
+          "label": "",
+          "command": "kitty"
         },
         {
-          "label": "󰉋",
-          "command": "thunar",
-          "tooltip": "Dosya Yöneticisi"
+          "label": "",
+          "command": "thunar"
         },
         {
-          "label": "󰍛",
-          "command": "kitty -e btop",
-          "tooltip": "Sistem Monitörü"
-        },
-        {
-          "label": "󰐥",
-          "command": "wlogout",
-          "tooltip": "Güç Menüsü"
+          "label": "",
+          "command": "kitty --class nmtui -e nmtui"
         }
       ],
       "buttons-per-row": 5

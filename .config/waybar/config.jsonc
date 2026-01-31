@@ -75,7 +75,9 @@
         "exec": "~/.config/waybar/scripts/weather.sh",
         "return-type": "json",
         "interval": 600,
-        "on-click": "xdg-open https://wttr.in"
+        "on-click": "xdg-open https://wttr.in",
+        "on-click-right": "~/.config/waybar/scripts/weather.sh --notify && pkill -RTMIN+1 waybar",
+        "signal": 1
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",

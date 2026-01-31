@@ -1,7 +1,7 @@
 window {
     margin: 0px;
-    border: 2px solid #fe8019;
-    background-color: rgba(40, 40, 40, 0.95);
+    border: 2px solid #cba6f7;
+    background-color: rgba(30, 30, 46, 0.95);
     border-radius: 18px;
     font-family: "JetBrainsMono Nerd Font";
     font-size: 15px;
@@ -15,8 +15,8 @@ window {
     margin: 10px 0px;
     padding: 15px;
     border-radius: 12px;
-    background-color: rgba(60, 56, 54, 0.8);
-    color: #ebdbb2;
+    background-color: rgba(49, 50, 68, 0.8);
+    color: #cdd6f4;
     border: none;
 }
 
@@ -30,12 +30,12 @@ window {
 }
 
 #entry:selected {
-    background: rgba(249, 184, 131, 0.25);
-    border: 1px solid #f9b883;
+    background: rgba(203, 166, 247, 0.25);
+    border: 1px solid #cba6f7;
     outline: none;
 }
 
 #text {
-    color: #ebdbb2;
+    color: #cdd6f4;
     margin-left: 10px;
 }

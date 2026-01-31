@@ -10784,3 +10784,533 @@ Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fu
 2026-01-10T00:18:38 player: played "Kylie Minogue/05.Slow.mp3"
 2026-01-10T00:21:57 player: played "Kylie Minogue/06.In your Eyes.mp3"
 2026-01-10T00:25:50 player: played "Kylie Minogue/08.Cant Get you Out of my Head.mp3"
+2026-01-10T18:27:15 exception: Bad playlist name
+2026-01-10T18:30:26 player: played "Kylie Minogue/07.Give Me Just a Little More Time.mp3"
+2026-01-10T18:34:33 player: played "Kylie Minogue/01.Come into my World.mp3"
+2026-01-10T18:38:00 player: played "Kylie Minogue/02.Spinning Around.mp3"
+2026-01-10T18:41:59 player: played "Kylie Minogue/03.Love at First Sight.mp3"
+2026-01-10T18:46:22 player: played "Kylie Minogue/04.Red Blooded Woman.mp3"
+2026-01-10T18:47:15 pipewire_output: Decoder is too slow; playing silence to avoid xrun
+2026-01-10T18:47:16 pipewire_output: Decoder is too slow; playing silence to avoid xrun
+2026-01-10T18:47:18 pipewire_output: Decoder is too slow; playing silence to avoid xrun
+2026-01-10T18:47:19 pipewire_output: Decoder is too slow; playing silence to avoid xrun
+2026-01-10T18:49:22 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T18:49:22 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T18:49:22 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T18:49:23 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T18:49:23 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T18:49:23 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T18:49:24 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T18:49:24 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T18:49:41 pipewire_output: Decoder is too slow; playing silence to avoid xrun
+2026-01-10T18:49:44 pipewire_output: Decoder is too slow; playing silence to avoid xrun
+2026-01-10T18:49:44 pipewire_output: Decoder is too slow; playing silence to avoid xrun
+2026-01-10T18:50:00 player: played "Kylie Minogue/10.All the Lovers.mp3"
+2026-01-10T18:51:06 pipewire_output: Decoder is too slow; playing silence to avoid xrun
+2026-01-10T18:51:06 player: played "Kylie Minogue/10.All the Lovers.mp3"
+2026-01-10T18:52:36 pipewire_output: Decoder is too slow; playing silence to avoid xrun
+2026-01-10T18:58:14 player: played "2023-10/Al Shami - Ya Leil W Yal Ein [Official Music Video] (2023) ⧸ الشامي - يا ليل ويالعين [b3unvqHR9m8].mp3"
+2026-01-10T19:02:30 player: played "Anastacia/Ultimate Collection/05.Stupid Little Things.mp3"
+2026-01-10T19:06:34 player: played "Anastacia/Ultimate Collection/01.I'm Outta Love.mp3"
+2026-01-10T19:08:13 ffmpeg/aac: Could not update timestamps for skipped samples.
+2026-01-10T19:08:24 ffmpeg/aac: Could not update timestamps for skipped samples.
+2026-01-10T19:12:46 player: played "YeniAlbüm/Bir Fırt Çek [dF5asy8rvtE].m4a"
+2026-01-10T19:17:03 player: played "Anastacia/Ultimate Collection/02.Left Outside Alone.mp3"
+2026-01-10T19:23:00 player: played "Çeşitli Sanatçılar/Azra Yabancı/21.Call Me Maybe - Carly Rae Jepsen.mp3"
+2026-01-10T19:24:29 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/41.Bad (Feat. Vassy) [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/35.Hey Mama (Feat. Nicki Minaj, Bebe Rexha & Afrojack) [Club Killers Remix] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/22.Bang my Head (Feat. Sia) [Glowinthedark Remix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/07.Listen (Feat. John Legend).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/32.Bang my Head (Feat. Sia) [Glowinthedark Remix] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/23.Listenin' (Continuous Album Mix) Intro.mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/40.Clap your Hands (Listenin' Continuous Album Mix).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/39.S.T.O.P. (Feat. Ryan Tedder) vs. Goodbye Friend [Feat. The Script] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/29.Dangerous (Feat. Sam Martin) [David Guetta Banging Remix] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/10.Hey Mama (Feat. Nicki Minaj, Bebe Rexha & Afrojack).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/44.The Death of Edm (Feat. Beardyman) [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/20.The Death of Edm (Feat. Beardyman).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/45.Hey Mama (Feat. Nicki Minaj, Bebe Rexha & Afrojack) vs. The Whisperer [Feat. Sia] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/30.Sun Goes Down (Feat. Magic! & Sonny Wilson) [Brooks Remix] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/25.What I Did For Love (Feat. Emeli Sande) [Morten Remix] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/17.Bad (Feat. Vassy) [Radio Edit].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/28.Dangerous (Feat. Sam Martin) [Robin Schulz Remix] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/19.Blast Off (Radio Edit).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/14.The Whisperer (Feat. Sia).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/27.Yesterday (Feat. Bebe Rexha) vs. Lift Me Up [Feat. Nico & Vinz, Ladysmith Black Mambazo] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/21.Pelican (Edit).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/36.Hey Mama (Feat. Nicki Minaj, Bebe Rexha & Afrojack) [Cesqeaux & Jeremia Jones Remix] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/11.Sun Goes Down (Feat. Magic! & Sonny Wilson).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/03.No Money No Love (Feat. Elliphant & Ms. Dynamite).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/38.Lift Me Up (Feat. Nico & Vinz, Ladysmith Black Mambazo) vs. Bang my Head [Feat Sia] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/04.Lovers on the Sun (Feat. Sam Martin).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/42.Blast Off (Listenin' Continuous Album Mix).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/05.Goodbye Friend (Feat. The Script).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/13.I'll Keep Loving you (Feat. Birdy & Jaymes Young).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/15.Bang my Head (Feat. Sia & Fetty Wap).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/33.Hey Mama (Feat. Nicki Minaj, Bebe Rexha & Afrojack) [Noodles Remix] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/06.Lift Me Up (Feat. Nico & Vinz, Ladysmith Black Mambazo).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/34.Hey Mama (Feat. Nicki Minaj, Bebe Rexha & Afrojack) [Afrojack Remix] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/43.Shot Me Down (Feat. Skylar Grey) [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/26.Lovers on the Sun (Feat. Sam Martin) [Stadiumx Remix] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/12.S.T.O.P (Feat. Ryan Tedder).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/16.Clap your Hands.mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/08.Bang my Head (Feat. Sia).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/02.What I Did For Love (Feat. Emeli Sande).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/09.Yesterday (Feat.Bebe Rexha).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/01.Dangerous (Feat. Sam Martin).mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/24.What I Did For Love (Feat. Emeli Sande) vs. S.T.O.P. [Feat. Ryan Tedder] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/37.I'll Keep Loving you (Feat Birdy & Jaymes Young) vs. Yesterday [Feat. Bebe Rexha] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/18.Shot Me Down (Feat. Skylar Grey) [Radio Edit].mp3
+2026-01-10T19:24:29 update: updating David Guetta/Listen Again/31.Sun Goes Down (Feat. Magic! & Sonny Wilson) [Hugel Remix] [Listenin' Continuous Album Mix].mp3
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T19:24:29 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T19:25:07 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/01.Titanium.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/13.Crank it Up.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/09.In my Head.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/11.Little Bad Girl.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/15.Every Chance We Get We Run.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/18.What the F.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/02.Turn Me on.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/20.The Alphabeat.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/08.Just One Last Time.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/21.Toy Story.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/06.Play Hard.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/07.Wild One Two.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/14.Nothing Really Matters.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/17.Lunar (David Guetta & Afrojack).mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/10.Where Them Girls at.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/04.Without you.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/03.She Wolf (Falling to Pieces).mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/12.Sweat.mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/16.Sunshine (David Guetta & Avicii).mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/19.Metropolis (David Guetta & Nicky Romero).mp3
+2026-01-10T19:25:08 update: updating David Guetta/Nothing But the Beat 2.0/05.I Can Only Imagine.mp3
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T19:25:08 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T19:25:23 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/03.Sexy Chick Ft. Akon.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/13.Sound of Letting Go Ft. Chris Willis; Tocadisco.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/11.One Love Ft. Estelle.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/05.On the Dancefloor Ft. Will.I.Am.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/14.Toyfriendft. Afrojack; Wynter Gordon.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/07.Missing you Ft. Novel.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/06.It's the Way you Love Me Ft. Kelly Rowland.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/04.Memories Ft. Kid Cudi.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/01.When Love Takes Over Ft. Kelly Rowland.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/12.I Wanna Go Crazy Ft. Will.I.Am.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/15.If We Ever Ft. Makeba.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/10.I Gotta Feeling [Fmif Remix Edit] Ft. The Black Eyed Peas.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/08.Choose Ft. Kelly Rowland; Ne-Yo.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/02.Gettin' Over Ft. Chris Willis.mp3
+2026-01-10T19:25:23 update: updating David Guetta/One More Love Disc 1/09.How Soon is Now Ft.  Dirty South; Julie Mcknight; Sebastian Ingrosso.mp3
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T19:25:23 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T19:25:42 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/01.Who's That Chick Ft. Rihanna.mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/07.Louder Than Words [Edit] Ft Afrojack; Niles Mason.mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/06.Missing you [New Version] Ft. Novel.mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/10.Grrrr.mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/09.Sexy Bitch [Chuckie & Lil John Remix Edit] Ft. Akon.mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/05.Acapella Ft. Kelis.mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/11.Love Don't Let Me Go (Walking Away) Chris Willis; the Egg.mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/13.Love is Gone Ft. Chris Willis.mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/12.The World is Mine Ft. Jd Davis.mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/04.Commander [Edit] Ft. Kelly Rowland.mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/03.Revolver [One Love Version].mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/02.Gettin' Over you.mp3
+2026-01-10T19:25:42 update: updating David Guetta/One More Love Disc 2/08.Freak Ft. Estelle; Kardinal Offishall.mp3
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T19:25:42 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T19:26:29 update: updating /Reynmen - Çatma Yarim.mp3
+2026-01-10T19:26:29 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T19:26:30 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T19:26:35 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T19:26:35 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/07.The One.mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/12.Honest.mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/02.Everybody Hates Me.mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/08.Paris.mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/04.You Owe Me.mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/13.Don't Let Me Down (Original Mix).mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/03.Somebody.mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/10.Kanye (Feat. Siren).mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/05.Something Just Like this.mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/06.Closer.mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/01.Sick Boy.mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/11.Young.mp3
+2026-01-10T19:26:49 update: updating Çeşitli Sanatçılar/1/09.Bloodstream.mp3
+2026-01-10T19:26:49 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T19:26:49 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/06.Batshit.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/18.Échame La Culpa.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/15.Listen to your Hear.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/12.There's Nothing Holdin' Me Back.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/19.Kiki.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/07.I Got You.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/09.Boys Fire.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/10.Wolves.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/09.Dusk Till Dawn.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/02.Flames ft David Guetta.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/05.Symphony.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/14.Trans-Siberian Orchestra.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/16. Time of my Life.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/13.Bellbottoms.m4a
+2026-01-10T19:27:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/04.I'm A Mess.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/01.Data.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/08.Sad Story (Out Of Luck).mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/17.Resident Evil Main Theme.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/11.Tremor.mp3
+2026-01-10T19:27:03 update: updating Çeşitli Sanatçılar/2/03.Solo.mp3
+2026-01-10T19:27:03 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T19:27:03 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/02.Thunderclouds  ft. Sia, Diplo.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/12.Don't Leave Me Alone ft. David Guetta.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/01.Cheap Thrills.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/08.2002.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/06.No Lie ft. Dua Lipa.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/15.Do It Right.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/03.Never Give Up.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/07.Rockabye ft. Sean Paul & Anne-Marie.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/09.Ciao Adios.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/11.Believer.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/05.Friends.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/14.Move Your Body.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/04.Be The One.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/13.Say My Name ft. Bebe Rexha.mp3
+2026-01-10T19:27:16 update: updating Çeşitli Sanatçılar/3/10.Then.mp3
+2026-01-10T19:27:16 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T19:27:16 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T19:27:31 update: updating Çeşitli Sanatçılar/4/02.Crush.mp3
+2026-01-10T19:27:31 update: updating Çeşitli Sanatçılar/4/06.Happy.mp3
+2026-01-10T19:27:31 update: updating Çeşitli Sanatçılar/4/04.Rockabye.mp3
+2026-01-10T19:27:31 update: updating Çeşitli Sanatçılar/4/01.Take On Me.mp3
+2026-01-10T19:27:31 update: updating Çeşitli Sanatçılar/4/08.To The Moon & Back.mp3
+2026-01-10T19:27:31 update: updating Çeşitli Sanatçılar/4/05.Just Give Me A Reason ft. Nate Ruess.mp3
+2026-01-10T19:27:31 update: updating Çeşitli Sanatçılar/4/03.Girls Like You ft. Cardi B.mp3
+2026-01-10T19:27:31 update: updating Çeşitli Sanatçılar/4/09.Başgan.mp3
+2026-01-10T19:27:31 update: updating Çeşitli Sanatçılar/4/07.Umbrella ft. JAY-Z.mp3
+2026-01-10T19:27:31 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T19:27:31 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/14.Erik Dalı.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/05.Tik Tak.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/01.O Sen Olsan Bari.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/07.Takvim.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/03.Tuttu Fırlattı.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/08.Çok Çok.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/10.Biz Hep Boyleyiz.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/12.Korkma Söyle.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/02.Şampiyon.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/06.Canavar.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/11.Sen Masallah Ft Derya Ulug.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/04.Bir Dakika.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/13.Tanrım.mp3
+2026-01-10T19:27:58 update: updating Çeşitli Sanatçılar/Azra 1/09.Al Yanına.mp3
+2026-01-10T19:27:58 ffmpeg/tty: Format tty detected only with low score of 1, misdetection possible!
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0020
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0019
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0018
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0017
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0016
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0015
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0014
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0013
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0012
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0011
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0010
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0009
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0008
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0007
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0006
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0005
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0004
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0003
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0002
+2026-01-10T19:27:58 update: removing The Cardigans/Super 20/Super 20.cue/track0001
+2026-01-10T19:37:33 player: played "Anastacia/Ultimate Collection/05.Stupid Little Things.mp3"
+2026-01-19T21:00:03 player: played "Anastacia/Ultimate Collection/05.Stupid Little Things.mp3"

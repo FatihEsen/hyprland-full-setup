@@ -26,43 +26,46 @@
 @define-color flamingo #f2cdcd;
 @define-color rosewater #f5e0dc;
 
-/* Global */
+/* Global Vars */
 * {
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
+    background-clip: padding-box;
 }
 
-/* CRITICAL: Transparent backgrounds for all containers */
-window,
-.blank-window {
+/* 
+   CRITICAL: Force the main window background to be transparent.
+   This fixes the issue where a GTK theme paints the whole screen or window opaque.
+*/
+.blank-window,
+.floating-notifications,
+.control-center,
+window {
     background: transparent;
     background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
 }
 
-.floating-notifications {
-    background: transparent;
-}
-
-/* Control Center - THE FIX */
+/* Re-apply background ONLY to the actual container we want visible */
 .control-center {
     background: @base;
     border: 2px solid @mauve;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     padding: 10px;
-    margin: 0;
-
-    /* HARD LIMITS */
-    width: 500px;
+    margin: 10px;
     min-width: 500px;
     max-width: 500px;
 
-    height: 900px;
-    min-height: 900px;
-    max-height: 900px;
+    /* Ensure height is dynamic but capped */
+    height: auto;
+    max-height: 600px;
+    overflow-y: auto;
 }
 
-/* Widget Title */
+/* Widget Konteynerleri */
 .widget-title {
     color: @mauve;
     padding: 5px 10px;
@@ -73,8 +76,10 @@ window,
 .widget-title>button {
     font-size: 1rem;
     color: @base;
+    text-shadow: none;
     background: @red;
     border-radius: 8px;
+    box-shadow: none;
     padding: 4px 10px;
 }
 
@@ -82,7 +87,6 @@ window,
     background: @maroon;
 }
 
-/* DND */
 .widget-dnd {
     background: @surface0;
     margin: 5px 10px;
@@ -106,7 +110,7 @@ window,
     border-radius: 8px;
 }
 
-/* Buttons Grid */
+/* Buton Izgarası */
 .widget-buttons-grid {
     background: @surface0;
     margin: 10px;
@@ -129,7 +133,7 @@ window,
     background: @surface2;
 }
 
-/* MPRIS */
+/* Medya Oynatıcı */
 .widget-mpris {
     background: @surface0;
     padding: 10px;
@@ -148,7 +152,7 @@ window,
     color: @subtext1;
 }
 
-/* Volume & Backlight */
+/* Ses ve Parlaklık */
 .widget-volume,
 .widget-backlight {
     background: @surface0;
@@ -182,12 +186,9 @@ slider {
     background: @text;
 }
 
-/* Notifications List */
+/* Bildirimler */
 .widget-notifications {
     margin: 10px;
-    /* Scrollable area for notifications */
-    min-height: 100px;
-    max-height: 300px;
 }
 
 .notification-row {
@@ -238,29 +239,13 @@ slider {
 }
 
 /* Floating Notifications (Popup) */
+.floating-notifications {
+    background: transparent;
+    max-height: 400px;
+}
+
 .floating-notifications .notification {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     border: 2px solid @mauve;
-    max-width: 500px;
-}
-
-/* Tooltips */
-tooltip {
-    background: @base;
-    border: 1px solid @mauve;
-    border-radius: 8px;
-    padding: 8px;
-    margin: 0;
-}
-
-tooltip label {
-    color: @text;
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-tooltip decoration {
-    box-shadow: none;
-    background: transparent;
+    max-height: 150px;
 }

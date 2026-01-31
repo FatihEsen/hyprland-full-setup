@@ -14,40 +14,52 @@ NC='\033[0m'
 echo -e "${BLUE}>>> Temizlik operasyonu başlıyor...${NC}"
 
 # 1. Paket Önbelleği Temizliği (pacman & yay)
-echo -e "${YELLOW}[1/4] Paket önbelleği temizleniyor...${NC}"
+echo -e "${YELLOW}[1/6] Paket önbelleği temizleniyor...${NC}"
+# Yarım kalmış indirmeleri (download-*) temizleyerek o fd 7 hatasını engelle
+sudo rm -f /var/cache/pacman/pkg/download-* 2>/dev/null
 sudo pacman -Sc --noconfirm
-yay -Sc --noconfirm
-
-# 2. Yetim Paketlerin (Orphans) Kaldırılması
-if [ -n "$(pacman -Qtdq)" ]; then
-    echo -e "${YELLOW}[2/4] Yetim paketler kaldırılıyor...${NC}"
-    sudo pacman -Rns $(pacman -Qtdq) --noconfirm
-else
-    echo -e "${GREEN}[2/4] Yetim paket bulunamadı.${NC}"
+if command -v yay &> /dev/null; then
+    yay -Sc --noconfirm
 fi
 
-# 3. Config Yedeklerinin (.bak) ve Logların Temizliği
-echo -e "${YELLOW}[3/4] Gereksiz yedek dosyaları ve loglar taranıyor...${NC}"
+# 2. Yetim Paketlerin (Orphans) Kaldırılması
+echo -e "${YELLOW}[2/6] Yetim paketler kontrol ediliyor...${NC}"
+ORPHANS=$(pacman -Qtdq)
+if [ -n "$ORPHANS" ]; then
+    sudo pacman -Rns $ORPHANS --noconfirm
+else
+    echo -e "${GREEN}>>> Yetim paket bulunamadı.${NC}"
+fi
 
-# .bak , .tmp ve eski log dosyalarını sil
+# 3. Sistem Logları ve Journal Temizliği
+echo -e "${YELLOW}[3/6] Sistem logları ve Journal temizleniyor...${NC}"
+sudo journalctl --vacuum-time=3d
+sudo journalctl --vacuum-size=50M
+
+# 4. Geçici Dosyalar ve Junk Temizliği
+echo -e "${YELLOW}[4/6] Geçici dosyalar ve çöp kutusu boşaltılıyor...${NC}"
+# Trash (Çöp Kutusu)
+rm -rf ~/.local/share/Trash/*
+# .bak , .tmp ve eski log dosyaları
 find ~/.config -name "*.bak" -type f -delete
 find ~/.config -name "*.tmp" -type f -delete
-find ~/.local/state -name "*.log" -type f -mtime +30 -delete
+find ~/.local/state -name "*.log" -type f -mtime +7 -delete
+# Kırık sembolik linkler
+find ~ -xtype l -path '*/.*' -prune -o -type l -delete 2>/dev/null
 
-# KDE kalıntıları (Zsh geçmişinde gördüğümüz o meşhur temizlik)
-rm -f ~/.config/kdeglobals
-rm -f ~/.config/kiorc
-rm -f ~/.config/ktrashrc
-rm -f ~/.config/dolphinrc
-
-echo -e "${GREEN}>>> Gereksiz dosyalar temizlendi.${NC}"
-
-# 4. Thumbnail (Küçük Resim) ve Önbellek Temizliği
-echo -e "${YELLOW}[4/4] Thumbnail ve genel cache temizleniyor...${NC}"
+# 5. Thumbnail ve Genel Cache Temizliği
+echo -e "${YELLOW}[5/6] Thumbnail ve genel cache temizleniyor...${NC}"
 rm -rf ~/.cache/thumbnails/*
-# İsteğe bağlı: 30 günden eski cache dosyalarını sil
-find ~/.cache -type f -atime +30 -delete
+# 15 günden eski cache dosyalarını sil (daha agresif)
+find ~/.cache -type f -atime +15 -delete
+
+# 6. Geliştirici Önbellekleri (Eğer varsa)
+echo -e "${YELLOW}[6/6] Geliştirici araçları önbellekleri kontrol ediliyor...${NC}"
+[ -d ~/.npm/_cacache ] && rm -rf ~/.npm/_cacache && echo -e "${GREEN}>>> NPM cache temizlendi.${NC}"
+[ -d ~/.cache/pip ] && rm -rf ~/.cache/pip && echo -e "${GREEN}>>> Pip cache temizlendi.${NC}"
+[ -d ~/.cache/go-build ] && rm -rf ~/.cache/go-build && echo -e "${GREEN}>>> Go build cache temizlendi.${NC}"
 
 echo -e "${BLUE}==================================================${NC}"
 echo -e "${GREEN}   TEMİZLİK TAMAMLANDI! Sistemin mermi gibi.   ${NC}"
 echo -e "${BLUE}==================================================${NC}"
+

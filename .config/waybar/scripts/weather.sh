@@ -1,13 +1,38 @@
 #!/bin/bash
+
 CITY="Altinordu"
-weather=$(curl -s "https://wttr.in/${CITY}?format=j1")
-if [ -z "$weather" ]; then
+
+# Check for notification flag
+NOTIFY=false
+if [[ "$1" == "--notify" ]]; then
+    NOTIFY=true
+fi
+
+get_weather() {
+    # Initial sleep to allow network to connect
+    sleep 2
+    for i in {1..5}; do
+        weather=$(curl -s "https://wttr.in/${CITY}?format=j1")
+        if [ -n "$weather" ]; then
+            echo "$weather"
+            return 0
+        fi
+        sleep 2
+    done
+    return 1
+}
+
+weather_data=$(get_weather)
+
+if [ -z "$weather_data" ]; then
     echo "{\"text\": \"N/A\", \"tooltip\": \"Hava durumu alınamadı\"}"
     exit
 fi
-temp=$(echo "$weather" | jq -r '.current_condition[0].temp_C')
-desc=$(echo "$weather" | jq -r '.current_condition[0].weatherDesc[0].value')
-code=$(echo "$weather" | jq -r '.current_condition[0].weatherCode')
+
+temp=$(echo "$weather_data" | jq -r '.current_condition[0].temp_C')
+desc=$(echo "$weather_data" | jq -r '.current_condition[0].weatherDesc[0].value')
+code=$(echo "$weather_data" | jq -r '.current_condition[0].weatherCode')
+
 case $code in
     113) icon="" ;; 116) icon="" ;; 119) icon="" ;; 122) icon="" ;; 143) icon="" ;;
     176) icon="" ;; 200) icon="" ;; 227) icon="" ;; 230) icon="" ;; 248) icon="" ;;
@@ -20,4 +45,10 @@ case $code in
     377) icon="" ;; 386) icon="" ;; 389) icon="" ;; 392) icon="" ;; 395) icon="" ;;
     *)   icon="" ;;
 esac
+
+if [ "$NOTIFY" = true ]; then
+    notify-send "Hava Durumu Güncellendi" "Şu an: $desc, $temp°C" -i weather-clear
+fi
+
 echo "{\"text\": \"$icon $temp°C\", \"tooltip\": \"Hava: $desc\nŞehir: $CITY\"}"
+
