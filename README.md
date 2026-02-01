@@ -16,13 +16,15 @@ Bu depo, kişiselleştirilmiş bir Arch Linux (Hyprland odaklı) kurulumunu sani
 
 ## �🚀 Neleri Kurar?
 
-- **Pencere Yöneticisi:** Hyprland
-- **Panel:** Waybar
+- **Pencere Yöneticisi:** Hyprland (Core tools: hyprlock, hypridle, hyprpicker, hyprcursor)
+- **Panel:** Waybar & swaync (Bildirim Merkezi)
 - **Terminal:** Kitty
 - **Editor:** Neovim
 - **AUR Helper:** yay-bin (Hızlı kurulum için)
-- **Dosya Yöneticisi:** Thunar & lf
-- **Diğer:** swaync (Bildirim), wofi (Launcher), ncmpcpp (Müzik), cava (Görselleştirici), hypridle/hyprlock (Güvenlik)
+- **Dosya Yöneticisi:** Thunar (Arşiv & resim önizleme desteğiyle) & lf
+- **Görünüm & Tema:** nwg-look (GTK ayarları), swww (Wallpaper), Bibata Cursors
+- **Multimedya:** ncmpcpp, cava, mpv, imv (Resim), playerctl & pamixer (Ses kontrol)
+- **Diğer:** wofi (Launcher), cliphist (Pano), swappy (Resim düzenleme)
 
 ## 🛠️ Nasıl Kullanılır?
 

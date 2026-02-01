@@ -25,6 +25,7 @@ efibootmgr
 evtest
 fastfetch
 ffmpegthumbnailer
+file-roller
 firefox
 freecad
 fzf
@@ -51,6 +52,7 @@ hyprpicker
 hyprutils
 hyprwayland-scanner
 imagemagick
+imv
 inkscape
 intel-media-driver
 intel-ucode
@@ -80,8 +82,8 @@ nano
 nasm
 ncmpcpp
 neovim
-network-manager-applet
 networkmanager
+network-manager-applet
 nodejs
 noto-fonts
 noto-fonts-cjk
@@ -92,7 +94,9 @@ nvidia-prime
 nvidia-settings
 nvidia-utils
 nwg-dock-hyprland
+nwg-look
 openscad
+pamixer
 papirus-icon-theme
 pavucontrol
 perl-image-exiftool
@@ -101,6 +105,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+playerctl
 polkit-kde-agent
 python-pipx
 qt5-wayland
@@ -112,15 +117,18 @@ slurp
 smartmontools
 socat
 sof-firmware
+swappy
 swaync
 swww
 sxiv
 telegram-desktop
 terminus-font
 thunar
+thunar-archive-plugin
 transmission-cli
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols
+tumbler
 unzip
 usbutils
 uwsm
@@ -136,6 +144,7 @@ wget
 wireless_tools
 wireplumber
 wl-clipboard
+wl-clip-persist
 wlogout
 wmctrl
 woff2-font-awesome

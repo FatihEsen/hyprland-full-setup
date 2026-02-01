@@ -38,16 +38,19 @@ SCRIPT_DIR=$(dirname "$(realpath "$0")")
 
 # Varsayılan paketler (Dosyalar yoksa kullanılacak)
 OFFICIAL_PKGS=(
-    "hyprland" "waybar" "swaync" "kitty" "neovim" "lf" "ncmpcpp" "mpd" "cava" 
-    "wofi" "thunar" "htop" "mpv" "brightnessctl" "wireplumber" "grim" "slurp" 
-    "wl-clipboard" "libnotify" "hypridle" "hyprlock" "network-manager-applet" 
-    "blueman" "pavucontrol" "xdg-desktop-portal-hyprland" "qt5-wayland" "qt6-wayland"
+    "hyprland" "hyprlock" "hypridle" "hyprcursor" "hyprgraphics" "hyprlang" "hyprutils" "hyprwayland-scanner"
+    "waybar" "swaync" "kitty" "neovim" "lf" "ncmpcpp" "mpd" "mpc" "cava" 
+    "wofi" "thunar" "htop" "btop" "mpv" "brightnessctl" "wireplumber" "grim" "slurp" 
+    "wl-clipboard" "libnotify" "network-manager-applet" "blueman" "pavucontrol" 
+    "xdg-desktop-portal-hyprland" "qt5-wayland" "qt6-wayland" "polkit-kde-agent"
+    "playerctl" "pamixer" "jq" "socat" "gvfs" "ffmpegthumbnailer" "tumbler"
+    "thunar-archive-plugin" "file-roller" "imv" "swappy" "hyprpicker" "wlogout"
+    "swww" "cliphist" "nwg-look" "wl-clip-persist"
     "fastfetch" "ttf-jetbrains-mono-nerd" "ttf-font-awesome" "papirus-icon-theme" "zsh" "stow"
 )
 
 AUR_PKGS=(
-    "swww" "cliphist" "wl-clip-persist-bin" "libinput-gestures" 
-    "bibata-cursor-theme-bin" "nwg-look"
+    "libinput-gestures" "bibata-cursor-theme-bin"
 )
 
 # Resmi paketleri kur

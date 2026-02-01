@@ -1,3 +1,4 @@
+bibata-cursor-theme-bin
 dwarfs-bin
 optimus-manager-git
 ttf-joypixels
