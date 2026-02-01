@@ -55,7 +55,7 @@ Yeni kurulmuş bir Arch Linux sisteminde terminali açın ve şu adımları izle
 
 ## ⌨️ Temel Tuş Atamaları (Hyprland)
 
-Tüm kısayollar Gruvbox teması ve verimlilik odaklı ayarlanmıştır. `SUPER` tuşu genellikle **Windows** tuşudur.
+Tüm kısayollar Catppuccin Mocha teması ve verimlilik odaklı ayarlanmıştır. `SUPER` tuşu genellikle **Windows** tuşudur.
 
 | Kısayol | İşlem |
 | :--- | :--- |
@@ -92,9 +92,9 @@ Tüm kısayollar Gruvbox teması ve verimlilik odaklı ayarlanmıştır. `SUPER`
 - `SUPER + H` ile daha önce kopyaladığınız her şeye (metin ve resim) ulaşabilirsiniz.
 
 ### 🎨 Görünüm Özelleştirme
-- **Tema:** Gruvbox Dark
+- **Tema:** Catppuccin Mocha
 - **Bar:** Waybar (Üstte, şeffaf ve modern)
-- **Bildirimler:** SwayNC (Gruvbox stili)
+- **Bildirimler:** SwayNC (Catppuccin Mocha stili)
 
 ## ⚠️ Önemli Notlar
 
