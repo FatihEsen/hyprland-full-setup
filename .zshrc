@@ -107,7 +107,6 @@ alias cls="clear && fastfetch"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias grok="ollama run llama3.2"
 export LF_ICONS=$(awk "{printf \"%s=%s:\", \$1, \$2}" ~/.config/lf/icons)
 alias ls='ls --color=auto --group-directories-first'
 export PATH="$HOME/.local/bin:$PATH"
