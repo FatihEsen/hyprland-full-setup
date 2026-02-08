@@ -1,8 +1,6 @@
 bibata-cursor-theme-bin
 dwarfs-bin
+noto-color-emoji-fontconfig
 optimus-manager-git
-ttf-joypixels
-hypnotix
-libinput-gestures
-simple-mtpfs
-wlogout
+yay-bin
+yay-bin-debug

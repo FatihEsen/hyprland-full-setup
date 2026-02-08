@@ -2,7 +2,6 @@ sw_volume: 100
 audio_device_state:1:PipeWire Output
 audio_device_state:1:Visualizer
 state: stop
-current: 0
 random: 0
 repeat: 0
 single: 0
@@ -12,23 +11,4 @@ mixrampdb: 0
 mixrampdelay: -1
 lastloadedplaylist: 
 playlist_begin
-0:Anastacia/Ultimate Collection/05.Stupid Little Things.mp3
-1:Anastacia/Ultimate Collection/01.I'm Outta Love.mp3
-2:YeniAlbüm/Bir Fırt Çek [dF5asy8rvtE].m4a
-3:Anastacia/Ultimate Collection/02.Left Outside Alone.mp3
-4:Anastacia/Ultimate Collection/03.Sick and Tired.mp3
-5:Anastacia/Ultimate Collection/04.Paid my Dues.mp3
-6:Anastacia/Ultimate Collection/06.Not That Kind.mp3
-7:Anastacia/Ultimate Collection/08.Welcome to my Truth.mp3
-8:Anastacia/Ultimate Collection/09.You'll Never Be Alone.mp3
-9:Anastacia/Ultimate Collection/10.Pieces of a Dream.mp3
-10:Anastacia/Ultimate Collection/11.Best of you.mp3
-11:Anastacia/Ultimate Collection/12.Heavy on my Heart.mp3
-12:Anastacia/Ultimate Collection/13.One Day in your Life (European Version).mp3
-13:Anastacia/Ultimate Collection/14.Cowboys & Kisses.mp3
-14:Anastacia/Ultimate Collection/15.Why'd you Lie to Me.mp3
-15:Anastacia/Ultimate Collection/16.Love is a Crime.mp3
-16:Anastacia/Ultimate Collection/18.Army of Me.mp3
-17:Anastacia/Ultimate Collection/19.Take this Chance.mp3
-18:Çeşitli Sanatçılar/Azra Yabancı/21.Call Me Maybe - Carly Rae Jepsen.mp3
 playlist_end

@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
-export ANDROID_HOME=/opt/android-sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 
 
@@ -114,3 +112,6 @@ export LF_ICONS=$(awk "{printf \"%s=%s:\", \$1, \$2}" ~/.config/lf/icons)
 alias ls='ls --color=auto --group-directories-first'
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
+export EDITOR=nvim
+export VISUAL=nvim
+export SYSTEMD_EDITOR=nvim
