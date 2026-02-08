@@ -7,20 +7,22 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-DOTFILES_DIR="$HOME/dotfiles"
+# Klasör isimlerini ayarla
+DOTFILES_DIR=$(dirname "$(realpath "$0")")
 CONFIG_DIR="$HOME/.config"
 
 echo -e "${BLUE}==================================================${NC}"
-echo -e "${GREEN}    DOTFILES BACKUP SCRIPT                       ${NC}"
+echo -e "${GREEN}    HYPRLAND BACKUP SCRIPT                       ${NC}"
 echo -e "${BLUE}==================================================${NC}"
 
 # .config altındaki klasörleri güncelle
-folders=("hypr" "kitty" "waybar" "swaync" "ncmpcpp" "ncspot" "lf" "nvim" "wofi" "fastfetch" "cava" "mpd" "htop" "btop")
+folders=("hypr" "kitty" "waybar" "swaync" "ncmpcpp" "lf" "nvim" "wofi" "fastfetch" "mpd" "htop" "btop")
 
 for folder in "${folders[@]}"; do
     if [ -d "$CONFIG_DIR/$folder" ]; then
         echo -e "${YELLOW}Yedekleniyor: $folder${NC}"
         rm -rf "$DOTFILES_DIR/.config/$folder"
+        mkdir -p "$DOTFILES_DIR/.config"
         cp -r "$CONFIG_DIR/$folder" "$DOTFILES_DIR/.config/"
     fi
 done
@@ -39,28 +41,29 @@ if [ -f "$HOME/.zshrc" ]; then
     cp "$HOME/.zshrc" "$DOTFILES_DIR/"
 fi
 
-# Paket listelerini güncelle
+# Paket listelerini güncelle (Sadece manuel kurulanlar)
 echo -e "${YELLOW}Paket listeleri güncelleniyor...${NC}"
-# Resmi paketler (explicitly installed, not as dependencies)
 pacman -Qqen > "$DOTFILES_DIR/pkglist.txt"
-# AUR paketleri (explicitly installed from AUR)
 pacman -Qqem > "$DOTFILES_DIR/aurpkglist.txt"
 
-echo -e "${GREEN}Tüm dosyalar ve paket listeleri $DOTFILES_DIR içine kopyalandı.${NC}"
+echo -e "${GREEN}Tüm dosyalar ve paket listeleri güncellendi.${NC}"
 
 # Git İşlemleri
 cd "$DOTFILES_DIR" || exit
 
-# Değişiklik var mı kontrol et
-if git status --porcelain | grep -q .; then
-    echo -e "${YELLOW}Değişiklikler algılandı, commit ediliyor...${NC}"
-    git add .
-    git commit -m "Backup: $(date '+%Y-%m-%d %H:%M:%S')"
-    echo -e "${YELLOW}GitHub'a pushlanıyor...${NC}"
-    git push origin main
-    echo -e "${GREEN}Başarıyla yedeklendi ve GitHub'a gönderildi!${NC}"
+if [ -d ".git" ]; then
+    if git status --porcelain | grep -q .; then
+        echo -e "${YELLOW}Değişiklikler algılandı, commit ediliyor...${NC}"
+        git add .
+        git commit -m "Backup: $(date '+%Y-%m-%d %H:%M:%S')"
+        echo -e "${YELLOW}GitHub'a gönderiliyor...${NC}"
+        git push origin main 2>/dev/null || echo -e "${RED}Push başarısız (Remote ayarlı olmayabilir).${NC}"
+        echo -e "${GREEN}Başarıyla yedeklendi!${NC}"
+    else
+        echo -e "${BLUE}Herhangi bir değişiklik yok.${NC}"
+    fi
 else
-    echo -e "${BLUE}Herhangi bir değişiklik yok.${NC}"
+    echo -e "${BLUE}Git reposu bulunamadı, sadece dosyalar güncellendi.${NC}"
 fi
 
 echo -e "${BLUE}==================================================${NC}"

@@ -1,103 +1,80 @@
-# Arch Linux Magic Setup (Dotfiles)
+# 🧊 Arch Linux Magic Setup (Pure Wayland)
 
-Bu depo, kişiselleştirilmiş bir Arch Linux (Hyprland odaklı) kurulumunu saniyeler içinde tamamlaman için hazırlanmıştır.
+Bu depo, modern ve performanslı bir **Arch Linux (Hyprland)** kurulumunu dakikalar içinde tamamlamanız için optimize edilmiştir. Gereksiz bağımlılıklardan arındırılmış, tamamen Wayland tabanlı ve "Catppuccin Mocha" estetiğiyle hazırlanmış bir sistem sunar.
 
-## � Ekran Görüntüleri
+## 🎨 Ekran Görüntüleri
 
 <p align="center">
-  <img src="screenshots/1.png" width="45%" />
-  <img src="screenshots/2.png" width="45%" />
-</p>
-<p align="center">
-  <img src="screenshots/3.png" width="30%" />
-  <img src="screenshots/4.png" width="30%" />
-  <img src="screenshots/5.png" width="30%" />
+  <img src="screenshots/1.png" width="45%" alt="Masaüstü Görünümü" />
+  <img src="screenshots/2.png" width="45%" alt="Terminal Görünümü" />
 </p>
 
-## �🚀 Neleri Kurar?
+---
 
-- **Pencere Yöneticisi:** Hyprland (Core tools: hyprlock, hypridle, hyprpicker, hyprcursor)
-- **Panel:** Waybar & swaync (Bildirim Merkezi)
-- **Terminal:** Kitty
-- **Editor:** Neovim
-- **AUR Helper:** yay-bin (Hızlı kurulum için)
-- **Dosya Yöneticisi:** Thunar (Arşiv & resim önizleme desteğiyle) & lf
-- **Görünüm & Tema:** nwg-look (GTK ayarları), swww (Wallpaper), Bibata Cursors
-- **Multimedya:** ncmpcpp, cava, mpv, imv (Resim), playerctl & pamixer (Ses kontrol)
-- **Diğer:** wofi (Launcher), cliphist (Pano), swappy (Resim düzenleme)
+## 🚀 Öne Çıkan Özellikler
 
-## 🛠️ Nasıl Kullanılır?
+- **Pencere Yöneticisi:** [Hyprland](https://hyprland.org/) (Hızlı, akıcı ve özelleştirilebilir)
+- **Panel & Bildirim:** Waybar & SwayNC (Modern ve minimalist)
+- **Terminal:** Kitty (GPU tabanlı performans)
+- **Editor:** Neovim (Gelişmiş IDE deneyimi)
+- **Dosya Yönetimi:** Thunar & lf (Görsel ve terminal tabanlı)
+- **Yazılım Yönetimi:** `yay-bin` (Hızlı AUR erişimi)
+- **Saf Wayland:** Xorg sunucusu içermeyen, tamamen modern protokoller üzerine kurulu yapı.
 
-Yeni kurulmuş bir Arch Linux sisteminde terminali açın ve şu adımları izleyin:
+---
 
-1.  **Klasöre giriş yapın:**
+## 🛠️ Hızlı Kurulum
+
+Yeni kurulmuş bir Arch Linux sisteminde şu adımları izleyin:
+
+1.  **Depoyu Klonlayın & Klasöre Girin:**
     ```bash
-    cd ~/dotfiles
+    git clone https://github.com/Fatih-fzh/hyprland-full-setup.git ~/hyprland-full-setup
+    cd ~/hyprland-full-setup
     ```
 
-2.  **Scripti çalıştırılabilir yapın:**
+2.  **Kurulumu Başlatın:**
     ```bash
     chmod +x install.sh
-    ```
-
-3.  **Setup'ı başlatın:**
-    ```bash
     ./install.sh
     ```
 
-4.  **Sistemi yeniden başlatın.**
+3.  **Sistemi Yeniden Başlatın.**
 
-## 📁 Dosya Yapısı
+---
 
-- `.config/`: Uygulama konfigürasyon dosyaları.
-- `.local/bin/`: Özel scriptler ve kilit ekranı sarmalayıcıları.
-- `install.sh`: Otomatik kurulum scripti.
+## ⌨️ Temel Kısayollar
 
-## ⌨️ Temel Tuş Atamaları (Hyprland)
-
-Tüm kısayollar Catppuccin Mocha teması ve verimlilik odaklı ayarlanmıştır. `SUPER` tuşu genellikle **Windows** tuşudur.
+`SUPER` tuşu genellikle **Windows** tuşudur.
 
 | Kısayol | İşlem |
 | :--- | :--- |
 | `SUPER + Enter` | Kitty Terminal |
-| `SUPER + Q` | Pencereyi Kapat |
+| `SUPER + Q` | Uygulamayı Kapat |
 | `SUPER + D` | Uygulama Menüsü (Wofi) |
-| `SUPER + E` | Dosya Yöneticisi (Thunar) |
-| `SUPER + B` | İnternet Tarayıcısı (Firefox) |
-| `SUPER + V` | Floating Modu Değiştir |
-| `SUPER + F` | Tam Ekran |
+| `SUPER + E` | Dosya Yöneticisi |
 | `SUPER + L` | Ekranı Kilitle |
-| `SUPER + H` | Pano (Clipboard) Geçmişi |
-| `SUPER + N` | Bildirim Merkezi (SwayNC) |
-| `SUPER + C` | Hızlı Notlar (Neovim) |
-| `SUPER + U` | Scratchpad (Gizli Terminal) |
-| `SUPER + Esc` | Güç Menüsü (Kapat/Yeniden Başlat) |
-| `Print` | Tüm Ekran Görüntüsü |
-| `Shift + Print` | Seçili Alan Görüntüsü |
+| `SUPER + B` | Tarayıcı (Firefox) |
+| `SUPER + H` | Pano Geçmişi |
+| `SUPER + ESC` | Güç Menüsü |
 
-## 🛠️ Uygulama Kılavuzu
+---
 
-### 🎵 Müzik (ncmpcpp & mpd)
-- Müzik dinlemek için terminalde `ncmpcpp` yazın.
-- `1`: Yardım, `2`: Çalma Listesi, `4`: Kütüphane, `8`: Görselleştirici.
+## 📁 Dosya Yapısı
 
-### 📂 Dosya Yönetimi (lf & Thunar)
-- Görsel arayüz için `SUPER + E` (Thunar).
-- Terminal tabanlı hızlı gezinti için terminalde `lf` yazın.
+- `.config/`: Uygulama konfigürasyonları.
+- `.local/bin/`: Özel scriptler (Scratchpad, kilit ekranı vb.)
+- `pkglist.txt`: Resmi depo paketleri.
+- `aurpkglist.txt`: AUR paketleri.
+- `install.sh`: Otomatik kurulum scripti.
+- `backup.sh`: Güncel ayarlarınızı depoya yedekleme scripti.
 
-### 📝 Not Alma (QuickNotes)
-- `SUPER + C` ile anlık not defterini açabilirsiniz. Bu dosya `~/quicknotes.md` olarak kaydedilir.
-
-### 📋 Pano Yönetimi (Cliphist)
-- `SUPER + H` ile daha önce kopyaladığınız her şeye (metin ve resim) ulaşabilirsiniz.
-
-### 🎨 Görünüm Özelleştirme
-- **Tema:** Catppuccin Mocha
-- **Bar:** Waybar (Üstte, şeffaf ve modern)
-- **Bildirimler:** SwayNC (Catppuccin Mocha stili)
+---
 
 ## ⚠️ Önemli Notlar
 
-- Script otomatik olarak `sudo` yetkisi isteyecektir.
-- Mevcut bir sistemde çalıştırıyorsanız, `.config` klasörünüzdeki dosyaların üzerine yazılacağını unutmayın.
-- Kurulumdan sonra kursor temasının ve fontların aktif olması için bir kez oturumu kapatıp açmanız önerilir.
+- Mevcut bir sistemde kurulum yapıyorsanız `.config` klasörünüzün üzerine yazılacaktır.
+- Kurulum bittikten sonra tam uyum için oturumu bir kez kapatıp açmanız önerilir.
+
+---
+<p align="center">Made with ❤️ for Arch Linux users.</p>

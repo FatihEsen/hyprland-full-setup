@@ -2,4 +2,7 @@ bibata-cursor-theme-bin
 dwarfs-bin
 optimus-manager-git
 ttf-joypixels
-yay-bin
+hypnotix
+libinput-gestures
+simple-mtpfs
+wlogout
