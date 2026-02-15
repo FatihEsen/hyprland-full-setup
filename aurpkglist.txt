@@ -1,6 +1,9 @@
 bibata-cursor-theme-bin
 dwarfs-bin
+google-chrome
 noto-color-emoji-fontconfig
 optimus-manager-git
+python-eyed3
+ttf-orbitron
 yay-bin
 yay-bin-debug

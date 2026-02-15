@@ -19,3 +19,22 @@ map w &swww img "$f" --transition-type grow --transition-pos center --transition
 # --- Kitty Görüntü Hack'i ---
 # Dosya üzerinde hareket ederken eski resmi temizler
 $mkdir -p ~/.cache/lf
+
+
+# --- MP3 Editor Entegrasyonu ---
+cmd mp3_selected %{{
+    python3 ~/.config/lf/scripts/mp3_editor/mp3_editor.py --mode=selected $fx
+}}
+
+cmd mp3_folder %{{
+    python3 ~/.config/lf/scripts/mp3_editor/mp3_editor.py --mode=folder
+}}
+
+cmd mp3_sorter %{{
+    python3 ~/.config/lf/scripts/mp3_editor/mp3_editor.py --mode=sorter $fx
+}}
+
+# Kısayollar
+map m :mp3_selected
+map M :mp3_folder
+map t :mp3_sorter

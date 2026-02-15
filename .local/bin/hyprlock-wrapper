@@ -60,11 +60,14 @@ do
     # 🌙 Parlaklığı düşür
     [[ -f "$BRIGHTNESS_FILE" ]] && set_brightness_percent 10
 
-    # ⏸️ Medyayı durdur
-    while IFS= read -r player;
-do playerctl -p "$player" pause 2>/dev/null; done < <(get_players)
-    [ -S /tmp/mpvsocket ] && echo '{ "command": ["set", "pause", true] }' |
-socat - /tmp/mpvsocket 2>/dev/null
+    # ⏸️ Medyayı durdur (Eğer keep-music dosyası yoksa)
+    if [ ! -f /tmp/hyprlock-keep-music ]; then
+        while IFS= read -r player; do
+            playerctl -p "$player" pause 2>/dev/null
+        done < <(get_players)
+        
+        [ -S /tmp/mpvsocket ] && echo '{ "command": ["set", "pause", true] }' | socat - /tmp/mpvsocket 2>/dev/null
+    fi
 
     # 🔔 Bildirim
     notify_user "🌙🔒 Kilitleniyor" "Medya durduruldu, parlaklık düşürüldü."

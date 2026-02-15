@@ -44,7 +44,7 @@ HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -107,6 +107,7 @@ alias cls="clear && fastfetch"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias grok="ollama run llama3.2"
 export LF_ICONS=$(awk "{printf \"%s=%s:\", \$1, \$2}" ~/.config/lf/icons)
 alias ls='ls --color=auto --group-directories-first'
 export PATH="$HOME/.local/bin:$PATH"

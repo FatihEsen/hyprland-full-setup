@@ -59,10 +59,10 @@
           "active": true
         },
         {
-          "label": "󰂯",
-          "tooltip": "Bluetooth: Açık",
+          "label": "󰂲",
+          "tooltip": "Bluetooth: Kapalı",
           "type": "toggle",
-          "active": true,
+          "active": false,
           "command": "bash /home/fatih/.config/swaync/scripts/toggle_bt.sh"
         },
         {

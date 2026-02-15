@@ -1,0 +1,13 @@
+#!/bin/bash
+LOCK_MUSIC_FILE="/tmp/hyprlock-keep-music"
+notify_user() {
+    local summary="$1" body="$2" urgency="${3:-low}" timeout="${4:-2000}"
+    notify-send --app-name="Hyprlock Music Control" --urgency="$urgency" --expire-time="$timeout" "$summary" "$body"
+}
+if [ -f "$LOCK_MUSIC_FILE" ]; then
+    rm "$LOCK_MUSIC_FILE"
+    notify_user "Müzik Durdurulacak" "Ekran kilitlendiğinde müzik durdurulacak." "normal"
+else
+    touch "$LOCK_MUSIC_FILE"
+    notify_user "Müzik Devam Edecek" "Ekran kilitlendiğinde müzik ÇALMAYA DEVAM EDECEK." "normal"
+fi

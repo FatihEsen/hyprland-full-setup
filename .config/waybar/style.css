@@ -20,7 +20,7 @@ tooltip {
 
 tooltip label {
     background: @base;
-    border: 1px solid @mauve;
+    border: 2px solid @mauve;
     border-radius: 6px;
     padding: 12px;
     font-size: 18px;
@@ -37,7 +37,7 @@ window#waybar.hidden {
 .modules-center,
 .modules-right {
     background-color: @base;
-    border: 1px solid @mauve;
+    border: 2px solid @mauve;
     border-radius: 6px;
     padding: 2px 10px;
     transition: all 0.3s ease;

@@ -1,0 +1,3 @@
+#!/bin/bash
+export PYTHONPATH="/home/fatih/Documents/nctaged:$PYTHONPATH"
+python3 /home/fatih/Documents/nctaged/run.py "$@"
