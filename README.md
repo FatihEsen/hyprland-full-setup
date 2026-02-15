@@ -34,7 +34,7 @@ Yeni kurulmuş bir Arch Linux sisteminde şu adımları izleyin:
 
 1.  **Depoyu Klonlayın & Klasöre Girin:**
     ```bash
-    git clone https://github.com/Fatih-fzh/hyprland-full-setup.git ~/hyprland-full-setup
+    git clone https://github.com/FatihEsen/hyprland-full-setup.git ~/hyprland-full-setup
     cd ~/hyprland-full-setup
     ```
 
