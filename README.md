@@ -19,6 +19,7 @@ Bu depo, modern ve performanslı bir **Arch Linux (Hyprland)** kurulumunu dakika
 
 - **Pencere Yöneticisi:** [Hyprland](https://hyprland.org/) (Hızlı, akıcı ve özelleştirilebilir)
 - **Panel & Bildirim:** Waybar & SwayNC (Modern ve minimalist)
+- **Akıllı Müzik Yönetimi:** Kilit ekranında (hyprlock) medya bilgisi ve kilitliyken medya kontrolü.
 - **Terminal:** Kitty (GPU tabanlı performans)
 - **Editor:** Neovim (Gelişmiş IDE deneyimi)
 - **Dosya Yönetimi:** Thunar & lf (Görsel ve terminal tabanlı)
@@ -59,15 +60,17 @@ Yeni kurulmuş bir Arch Linux sisteminde şu adımları izleyin:
 | `SUPER + E` | Dosya Yöneticisi |
 | `SUPER + L` | Ekranı Kilitle |
 | `SUPER + B` | Tarayıcı (Firefox) |
+| `SUPER + M` | Müzik Kilit Modu (Pause/Play on Lock) |
 | `SUPER + H` | Pano Geçmişi |
 | `SUPER + ESC` | Güç Menüsü |
+| `Medya Tuşları` | Kilitliyken de müzik kontrolü |
 
 ---
 
 ## 📁 Dosya Yapısı
 
 - `.config/`: Uygulama konfigürasyonları.
-- `.local/bin/`: Özel scriptler (Scratchpad, kilit ekranı vb.)
+- `.local/bin/`: Özel scriptler (Müzik kontrolü, Scratchpad vb.)
 - `pkglist.txt`: Resmi depo paketleri.
 - `aurpkglist.txt`: AUR paketleri.
 - `install.sh`: Otomatik kurulum scripti.
