@@ -41,10 +41,10 @@ if [ -f "$HOME/.zshrc" ]; then
     cp "$HOME/.zshrc" "$DOTFILES_DIR/"
 fi
 
-# Paket listelerini güncelle (Sadece manuel kurulanlar)
+# Paket listelerini güncelle (Spesifik paketleri hariç tut)
 echo -e "${YELLOW}Paket listeleri güncelleniyor...${NC}"
-pacman -Qqen > "$DOTFILES_DIR/pkglist.txt"
-pacman -Qqem > "$DOTFILES_DIR/aurpkglist.txt"
+pacman -Qqen | grep -vE "^(inkscape)$" > "$DOTFILES_DIR/pkglist.txt"
+pacman -Qqem | grep -vE "^(inkscape)$" > "$DOTFILES_DIR/aurpkglist.txt"
 
 echo -e "${GREEN}Tüm dosyalar ve paket listeleri güncellendi.${NC}"
 

@@ -17,7 +17,6 @@ hypridle
 hyprland
 hyprlock
 imagemagick
-inkscape
 intel-ucode
 jq
 kitty
