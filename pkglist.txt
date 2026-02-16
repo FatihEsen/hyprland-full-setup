@@ -8,9 +8,7 @@ conky
 efibootmgr
 fastfetch
 figlet
-firefox
 git
-github-cli
 grim
 gst-plugin-pipewire
 hypridle
@@ -32,9 +30,7 @@ ncmpcpp
 neovim
 net-tools
 networkmanager
-nodejs
 noto-fonts
-npm
 ntfs-3g
 nwg-look
 openssh
