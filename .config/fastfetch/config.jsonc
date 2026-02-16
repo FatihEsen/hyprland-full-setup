@@ -9,7 +9,7 @@
         },
         "color": {
             "1": "#cba6f7", // Mauve
-            "2": "#89b4fa"  // Blue
+            "2": "#89b4fa" // Blue
         },
         "height": 12
     },
@@ -19,8 +19,8 @@
             "type": "title",
             "color": {
                 "user": "#cba6f7", // Mauve
-                "at": "#cdd6f4",   // Text
-                "host": "#89b4fa"  // Blue
+                "at": "#cdd6f4", // Text
+                "host": "#89b4fa" // Blue
             },
             "separator": "  "
         },
@@ -103,9 +103,16 @@
         },
         {
             "type": "disk",
-            "key": " Disk",
+            "key": " Disk (/)",
             "keyColor": "#a6e3a1", // Green
             "folders": "/",
+            "separator": "  "
+        },
+        {
+            "type": "disk",
+            "key": " Disk (Home)",
+            "keyColor": "#a6e3a1", // Green
+            "folders": "/home",
             "separator": "  "
         },
         {

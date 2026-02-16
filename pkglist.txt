@@ -17,6 +17,7 @@ hypridle
 hyprland
 hyprlock
 imagemagick
+inkscape
 intel-ucode
 jq
 kitty
@@ -63,6 +64,8 @@ wl-clip-persist
 woff2-font-awesome
 wofi
 wpa_supplicant
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
 xdg-utils
 yt-dlp
 zram-generator
