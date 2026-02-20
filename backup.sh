@@ -16,7 +16,7 @@ echo -e "${GREEN}    HYPRLAND BACKUP SCRIPT                       ${NC}"
 echo -e "${BLUE}==================================================${NC}"
 
 # .config altındaki klasörleri güncelle
-folders=("hypr" "kitty" "waybar" "swaync" "ncmpcpp" "lf" "nvim" "wofi" "fastfetch" "mpd" "htop" "btop")
+folders=("hypr" "kitty" "waybar" "swaync" "ncmpcpp" "lf" "nvim" "wofi" "fastfetch" "mpd" "btop")
 
 for folder in "${folders[@]}"; do
     if [ -d "$CONFIG_DIR/$folder" ]; then
