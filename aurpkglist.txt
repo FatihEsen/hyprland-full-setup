@@ -1,7 +1,10 @@
 bibata-cursor-theme-bin
+catppuccin-gtk-theme-latte
 catppuccin-gtk-theme-mocha
 dwarfs-bin
+gojq
 gruvbox-gtk-theme-git
+libinput-gestures
 noto-color-emoji-fontconfig
 python-eyed3
 ttf-orbitron
