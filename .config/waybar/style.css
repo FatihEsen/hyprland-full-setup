@@ -85,6 +85,7 @@ window#waybar.hidden {
 #memory,
 #temperature,
 #network,
+#bluetooth,
 #pulseaudio,
 #tray,
 #custom-weather,
@@ -101,6 +102,7 @@ window#waybar.hidden {
 #memory:hover,
 #temperature:hover,
 #network:hover,
+#bluetooth:hover,
 #pulseaudio:hover,
 #custom-weather:hover {
     background: rgba(203, 166, 247, 0.15);
@@ -120,6 +122,14 @@ window#waybar.hidden {
 
 #pulseaudio {
     color: @sapphire;
+}
+
+#bluetooth {
+    color: @blue;
+}
+
+#bluetooth.disconnected {
+    color: @overlay0;
 }
 
 #pulseaudio.muted {

@@ -1,6 +1,8 @@
+android-tools
 base
 base-devel
 bc
+blender
 bluez
 bluez-utils
 brightnessctl
@@ -17,6 +19,8 @@ hyprland
 hyprlock
 imagemagick
 intel-ucode
+jdk-openjdk
+jdk17-openjdk
 jq
 kitty
 lf
@@ -41,8 +45,10 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+pnpm
 polkit-kde-agent
 power-profiles-daemon
+pulsemixer
 python-mutagen
 python-pip
 qt5-wayland
@@ -54,11 +60,14 @@ stow
 sudo
 swaync
 swww
+telegram-desktop
+tk
 toilet
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 unzip
 waybar
+wev
 wget
 wireplumber
 wl-clip-persist
@@ -69,6 +78,7 @@ wpa_supplicant
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-utils
+ydotool
 yt-dlp
 zram-generator
 zsh
