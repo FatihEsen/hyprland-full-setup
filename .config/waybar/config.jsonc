@@ -111,7 +111,7 @@
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} bağlı\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "on-click": "pavucontrol",
-        "on-click-right": "bluetoothctl connect 82:5E:B0:91:B3:A0"
+        "on-click-right": "bluetoothctl connect 82:5E:B0:91:B3:A0 && sleep 2 && pactl set-default-sink bluez_output.82_5E_B0_91_B3_A0.1"
     },
     "network": {
         "interval": 1,

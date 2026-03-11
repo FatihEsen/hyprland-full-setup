@@ -52,15 +52,15 @@
     "buttons-grid": {
       "actions": [
         {
-          "label": "󰖩",
+          "label": "󰤥",
           "command": "bash /home/fatih/.config/swaync/scripts/toggle_wifi.sh",
           "type": "toggle",
-          "tooltip": "Bağlı: CihanMert",
+          "tooltip": "󰖩 WiFi: CihanMert\n📶 Sinyal:  61%",
           "active": true
         },
         {
           "label": "󰂯",
-          "tooltip": "Bluetooth: Açık",
+          "tooltip": "󰂯 Bluetooth: Açık\n(Bağlı cihaz yok)",
           "type": "toggle",
           "active": true,
           "command": "bash /home/fatih/.config/swaync/scripts/toggle_bt.sh"
@@ -68,7 +68,7 @@
         {
           "label": "󰕾",
           "command": "pavucontrol",
-          "tooltip": "Ses Ayarları"
+          "tooltip": "󰕾 Ses Seviyesi: 70%"
         },
         {
           "label": "󰛳",

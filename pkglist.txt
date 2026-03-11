@@ -7,10 +7,12 @@ bluez
 bluez-utils
 brightnessctl
 btop
+cliphist
 conky
 efibootmgr
 fastfetch
 figlet
+fontforge
 git
 grim
 gst-plugin-pipewire
@@ -61,6 +63,7 @@ sudo
 swaync
 swww
 telegram-desktop
+thunar
 tk
 toilet
 ttf-jetbrains-mono
