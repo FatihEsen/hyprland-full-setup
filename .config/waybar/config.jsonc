@@ -15,7 +15,7 @@
         "custom/weather"
     ],
     "modules-right": [
-        "pulseaudio",
+        "custom/pulseaudio",
         "bluetooth",
         "network",
         "cpu",
@@ -84,24 +84,16 @@
         "on-click-right": "~/.config/waybar/scripts/weather.sh --notify && pkill -RTMIN+1 waybar",
         "signal": 1
     },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-muted": "  Sessiz",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": [
-                "",
-                "",
-                ""
-            ]
-        },
-        "on-click": "pavucontrol",
-        "scroll-step": 5
+    "custom/pulseaudio": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/volume.sh",
+        "on-click": "~/.config/waybar/scripts/volume_action.sh mute && pkill -RTMIN+2 waybar",
+        "on-scroll-up": "~/.config/waybar/scripts/volume_action.sh up && pkill -RTMIN+2 waybar",
+        "on-scroll-down": "~/.config/waybar/scripts/volume_action.sh down && pkill -RTMIN+2 waybar",
+        "on-click-right": "pavucontrol",
+        "interval": 1,
+        "signal": 2
     },
     "bluetooth": {
         "format": "",
@@ -111,7 +103,9 @@
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} bağlı\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "on-click": "pavucontrol",
-        "on-click-right": "bluetoothctl connect 82:5E:B0:91:B3:A0 && sleep 2 && pactl set-default-sink bluez_output.82_5E_B0_91_B3_A0.1"
+        "on-click-right": "bluetoothctl connect 82:5E:B0:91:B3:A0 && sleep 2 && wpctl set-default $(wpctl status | grep -i 'Wuzhi' | head -n 1 | awk '{print $1}' | tr -d '.') && pkill -RTMIN+2 waybar",
+        "on-scroll-up": "~/.config/waybar/scripts/volume_action.sh up bt",
+        "on-scroll-down": "~/.config/waybar/scripts/volume_action.sh down bt"
     },
     "network": {
         "interval": 1,

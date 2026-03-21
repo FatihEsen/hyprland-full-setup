@@ -1,3 +1,4 @@
+android-sdk
 antigravity
 bibata-cursor-theme-bin
 catppuccin-gtk-theme-latte

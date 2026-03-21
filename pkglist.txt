@@ -1,7 +1,9 @@
 android-tools
+android-udev
 base
 base-devel
 bc
+bind
 blender
 bluez
 bluez-utils
@@ -14,6 +16,8 @@ fastfetch
 figlet
 fontforge
 git
+godot
+godot-mono
 grim
 gst-plugin-pipewire
 hypridle
@@ -25,6 +29,7 @@ jdk-openjdk
 jdk17-openjdk
 jq
 kitty
+ldns
 lf
 libnotify
 libpulse
@@ -41,6 +46,7 @@ networkmanager
 noto-fonts
 ntfs-3g
 nwg-look
+openresolv
 openssh
 pavucontrol
 pipewire
@@ -72,6 +78,7 @@ unzip
 waybar
 wev
 wget
+wireguard-tools
 wireplumber
 wl-clip-persist
 wl-clipboard

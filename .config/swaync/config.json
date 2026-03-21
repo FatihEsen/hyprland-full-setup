@@ -55,7 +55,7 @@
           "label": "󰤥",
           "command": "bash /home/fatih/.config/swaync/scripts/toggle_wifi.sh",
           "type": "toggle",
-          "tooltip": "󰖩 WiFi: CihanMert\n📶 Sinyal:  61%",
+          "tooltip": "󰖩 WiFi: CihanMert\n📶 Sinyal:  69%",
           "active": true
         },
         {
@@ -66,9 +66,9 @@
           "command": "bash /home/fatih/.config/swaync/scripts/toggle_bt.sh"
         },
         {
-          "label": "󰕾",
+          "label": "󰝟",
           "command": "pavucontrol",
-          "tooltip": "󰕾 Ses Seviyesi: 70%"
+          "tooltip": "󰝟 Ses Seviyesi: 0%"
         },
         {
           "label": "󰛳",
