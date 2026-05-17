@@ -9,7 +9,15 @@ notify_user() {
 # --- 1. Durumları Kaydet ---
 # Eğer dosya zaten varsa (zaten kilitliyse), mevcut parlaklığı bozmamak için üzerine yazmıyoruz.
 if [ ! -f "$BRIGHTNESS_FILE" ]; then
-    brightnessctl get > "$BRIGHTNESS_FILE" 2>/dev/null
+    CURRENT_VAL=$(brightnessctl get)
+    MAX_VAL=$(brightnessctl max)
+    # Eğer parlaklık %20'den azsa, muhtemelen hypridle kısmıştır. 
+    # Bu durumda kilit açılınca tam parlaklığa dönmesi için MAX_VAL kaydediyoruz.
+    if [ "$CURRENT_VAL" -lt $((MAX_VAL / 5)) ]; then
+        echo "$MAX_VAL" > "$BRIGHTNESS_FILE"
+    else
+        echo "$CURRENT_VAL" > "$BRIGHTNESS_FILE"
+    fi
 fi
 
 # Çalan medya oynatıcılarını kaydet
