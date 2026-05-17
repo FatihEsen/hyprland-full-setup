@@ -8,6 +8,19 @@ Bu depo, modern, estetik ve performans odaklı bir **Arch Linux (Hyprland)** den
 
 ---
 
+## 📸 Ekran Görüntüleri
+
+<p align="center">
+  <img src="screenshots/1.png" width="45%" />
+  <img src="screenshots/2.png" width="45%" />
+</p>
+<p align="center">
+  <img src="screenshots/3.png" width="45%" />
+  <img src="screenshots/4.png" width="45%" />
+</p>
+
+---
+
 ## ✨ Öne Çıkan Özellikler
 
 - **🎨 Dinamik Estetik:** Catppuccin Mocha tabanlı, göz yormayan ve modern bir arayüz.
@@ -62,15 +75,6 @@ cd hyprland-full-setup
 chmod +x install.sh
 ./install.sh
 ```
-
-### Gereksinimler
-Sistemin tam işlevsel çalışması için şu paketlerin yüklü olması önerilir:
-`hyprland`, `hyprlock`, `hypridle`, `waybar`, `swaync`, `wofi`, `kitty`, `thunar`, `brightnessctl`, `playerctl`, `grim`, `slurp`, `wl-clipboard`.
-
----
-
-## 📸 Ekran Görüntüleri
-*Ekran görüntüleri `screenshots/` dizini altında bulunmaktadır.*
 
 ---
 
