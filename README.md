@@ -47,6 +47,13 @@ Bu depo, modern, estetik ve performans odaklı bir **Arch Linux (Hyprland)** den
 
 ## 🚀 Kurulum
 
+Bu kurulum süreci **interaktiftir**; her adımda onayınız istenir. Script sırasıyla şunları yapar:
+1. Temel araçları kontrol eder ve gerekirse `yay` (AUR yardımcısı) kurar.
+2. Resmi ve AUR paketlerini yükler.
+3. Oh-My-Zsh kurulumunu yapar.
+4. Yapılandırma dosyalarını (`~/.config`, `~/.local/bin`, `.zshrc`) yerleştirir.
+5. Gerekli sistem servislerini ve grup yetkilerini ayarlar.
+
 > **Uyarı:** Kurulum scripti mevcut konfigürasyonlarınızın üzerine yazabilir. Yedek almanız önerilir.
 
 ```bash
