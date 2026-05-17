@@ -1,9 +1,6 @@
-android-sdk
-antigravity
 bibata-cursor-theme-bin
 catppuccin-gtk-theme-latte
 catppuccin-gtk-theme-mocha
-dwarfs-bin
 eww
 gojq
 gruvbox-gtk-theme-git

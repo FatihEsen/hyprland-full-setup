@@ -4,7 +4,6 @@ base
 base-devel
 bc
 bind
-blender
 bluez
 bluez-utils
 brightnessctl
@@ -16,8 +15,6 @@ fastfetch
 figlet
 fontforge
 git
-godot
-godot-mono
 grim
 gst-plugin-pipewire
 hypridle
@@ -26,7 +23,6 @@ hyprlock
 imagemagick
 intel-ucode
 jdk-openjdk
-jdk17-openjdk
 jq
 kitty
 ldns
@@ -63,7 +59,6 @@ qt5-wayland
 qt6-wayland
 slurp
 sof-firmware
-speech-dispatcher
 stow
 sudo
 swaync
